@@ -3,29 +3,31 @@
 Die Knotenregel und die Maschenregel
 ====================================
 
-Häufig gilt es, die in einem Stromkreis fließende Gesamtspannung bzw.
--Stromstärke zu ermitteln. Hierzu gibt es zwei allgemeingültige
-Gesetzmäßigkeiten, die als Maschen- und Knotenregel oder nach ihrem Entdecker
-`Gustav Robert Kirchhoff
-<http://de.wikipedia.org/wiki/Gustav_Robert_Kirchhoff>`_ auch als Kirchhoffsche
+Insbesondere bei der Schaltungs-Simulation ist es von großer Bedeutung, die in
+einem Stromkreis auftretenden Spannungen und Stromstärken zu bestimmen. Hierzu
+werden zwei allgemeingültige Gesetzmäßigkeiten verwendet, die als Maschen- und
+Knotenregel oder nach ihrem Entdecker `Gustav Robert Kirchhoff
+<https://de.wikipedia.org/wiki/Gustav_Robert_Kirchhoff>`_ auch als Kirchhoffsche
 Regeln bekannt sind.
 
 
-.. index::
-    single: Kirchhoffsche Regeln; Knotenregel
+.. index:: Kirchhoffsche Regeln; Knotenregel, Knotenregel
+.. _Knotenregel:
 .. _Die Knotenregel:
+.. _Kirchhoffsches Stromgesetz:
 
 Die Knotenregel
 ---------------
 
-Als Knoten wird eine leitende Verbindung zweier oder mehrerer Leiter bezeichnet.
+Als :ref:`Knoten <Netzwerk-Knoten>` wird eine leitende Verbindung zweier oder
+mehrerer Bauteile bezeichnet; ein Knoten ist also ein Stück eines oder mehrerer
+unmittelbar miteinander verbundener Leiter.
 
-Aufgrund der Ladungserhaltung ergibt es sich, dass an jedem Knotenpunkt die
-Menge der zufließenden Ladung gleich der Menge der abfließenden Ladung sein
-muss. Somit muss auch die Summe der zufließenden Stromstärken
-:math:`I_{\mathrm{in, 1}},\; I_{\mathrm{in, 2}},\; \ldots` gleich der Summe der
-abfließenden Stromstärken :math:`I_{\mathrm{out, 1}},\; I_{\mathrm{out, 2}},\;
-\ldots` sein.
+Aufgrund der Ladungs-Erhaltung muss an jedem Knoten die Menge der zufließenden
+Ladung gleich der Menge der abfließenden Ladung sein. Somit muss auch die Summe
+der zufließenden Stromstärken :math:`I_{\mathrm{in, 1}},\; I_{\mathrm{in, 2}},\;
+\ldots` mit der Summe der abfließenden Stromstärken :math:`I_{\mathrm{out,
+1}},\; I_{\mathrm{out, 2}},\; \ldots` übereinstimmen.
 
 .. math::
 
@@ -42,7 +44,7 @@ als negativ, so lässt sich die obige Gleichung mit dem Summenzeichen
 
     \sum_{}^{} I = 0
 
-Sämtliche Ströme eines Knoten müssen in der Summe stets null ergeben.
+Sämtliche Ströme eines Knoten müssen in der Summe stets Null ergeben.
 
 .. figure::
     ../pics/schaltungen/knotenregel.png
@@ -59,9 +61,10 @@ Sämtliche Ströme eines Knoten müssen in der Summe stets null ergeben.
         <../pics/schaltungen/knotenregel.svg>`
 
 
-.. index::
-    single: Kirchhoffsche Regeln; Maschenregel
+.. index:: Kirchhoffsche Regeln; Maschenregel, Maschenregel
+.. _Maschenregel:
 .. _Die Maschenregel:
+.. _Kirchhoffsches Spannungsgesetz:
 
 Die Maschenregel
 ----------------
@@ -82,15 +85,15 @@ sein.
 
 Zählt man wiederum die Spannungswerte der Stromquellen
 :math:`U_{\mathrm{\uparrow }}` als positiv und die Spannungswerte der
-Verbraucher :math:`I_{\mathrm{\downarrow }}` als negativ, so lässt sich die
-obige Gleichung mit dem Summenzeichen :math:`\Sigma` einfacher schreiben als:
+Verbraucher :math:`U_{\mathrm{\downarrow }}` als negativ, so lässt sich die
+obige Gleichung mit dem Summenzeichen :math:`\sum` einfacher schreiben als:
 
 .. math::
     :label: eqn-maschenregel
 
     \sum_{}^{} U = 0
 
-Sämtliche Spannungen innerhalb einer Masche müssen in der Summe stets null ergeben.
+Sämtliche Spannungen innerhalb einer Masche müssen in der Summe stets Null ergeben.
 
 .. figure::
     ../pics/schaltungen/maschenregel.png
@@ -105,5 +108,10 @@ Sämtliche Spannungen innerhalb einer Masche müssen in der Summe stets null erg
 
         :download:`SVG: Maschenregel
         <../pics/schaltungen/maschenregel.svg>`
+
+Die Kirchhoffschen Gesetze ermöglichen es Schaltungs-Simulations-Programmen,
+Gleichungssysteme zur Bestimmung der unbekannten Spannungen beziehungsweise
+Stromstärken aufzustellen.
+
 
 .. todo übungsaufgaben

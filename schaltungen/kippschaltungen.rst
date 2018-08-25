@@ -4,16 +4,18 @@
 Kipp-Schaltungen
 ================
 
-.. index::
-    single: Kippschaltung; bistabil
-.. _Die bistabile Kippschaltung:
+.. index:: Kippschaltung; bistabil
+.. _Flip-Flop:
+.. _Bistabile Kippstufe:
+.. _Bistabile Kippschaltung:
 
 Die bistabile Kippschaltung
 ---------------------------
+.. {{{
 
 Eine bistabile Kippschaltung (auch "Flip-Flop" genannt) hat zwei stabile
 Zustände, zwischen denen durch Betätigung eines Schalters hin- und hergewechselt
-werden kann.
+werden kann. [#]_
 
 .. figure::
     ../pics/schaltungen/kippschaltung-bistabil.png
@@ -29,7 +31,7 @@ werden kann.
         :download:`SVG: Bistabile Kippschaltung
         <../pics/schaltungen/kippschaltung-bistabil.svg>`
 
-Wird der Hauptschalter :math:`S_{\rm{0}}` im :ref:`Schema einer bistabilen
+Wird der Hauptschalter :math:`S_0` im :ref:`Schema einer bistabilen
 Kippschaltung <fig-kippschaltung-bistabil>` geschlossen, so fließen schwache
 Ströme über die (starken) Widerstände :math:`R_5` und :math:`R_6` zu den
 Basis-Anschlüssen der Transistoren :math:`T_1` und :math:`T_2`. [#]_ Welcher der
@@ -75,11 +77,12 @@ Bauteil-Eigenschaften ab.
 
 
 Werden die Schalter :math:`S_1` und :math:`S_2` mit den unteren Querleitungen
-statt den oberen verbunden, so kann durch Betätigung von :math:`S_2` der
+statt den oberen verbunden, so kann durch Betätigung von :math:`S_1` der
 Transistor :math:`T_1` mitsamt dem linken Verbraucher-Stromkreis (Leuchtdiode
 :math:`D_1` mit Vorwiderstand :math:`R_1`) und durch Betätigung von :math:`S_2`
 der Transistor :math:`T_2` mitsamt dem rechten Verbraucher-Stromkreis
 (Leuchtdiode :math:`D_2` mit Vorwiderstand :math:`R_2`) aktiviert werden.
+
 
 In der Digitaltechnik werden bistabile Kippschaltungen beispielsweise als
 elektronische Datenspeicher verwendet -- je Flip-Flop kann genau ein Bit an
@@ -87,16 +90,18 @@ Information gespeichert werden. Auch in Quarzuhren und Mikrochips kommen
 bistabile Kippschaltungen zum Einsatz; anstelle der mechanischen Schalter werden
 hierbei stets elektrische Signale zum Schalten genutzt.
 
+.. }}}
 
-.. index::
-    single: Kippschaltung; astabil
-.. _Die astabile Kippschaltung:
+.. index:: Kippschaltung; astabil
+.. _Astabile Kippstufe:
+.. _Astabile Kippschaltung:
 
 Die astabile Kippschaltung
 --------------------------
+.. {{{
 
 Eine astabile Kipp-Schaltung (auch "Multivibrator" genannt) hat keinen stabilen
-Zustand; sie kippt zwischen zwei Zuständen ständig hin und her.
+Zustand; sie kippt zwischen zwei Zuständen ständig hin und her. [#]_
 
 .. figure::
     ../pics/schaltungen/kippschaltung-astabil.png
@@ -112,8 +117,8 @@ Zustand; sie kippt zwischen zwei Zuständen ständig hin und her.
         :download:`SVG: Astabile Kippschaltung
         <../pics/schaltungen/kippschaltung-astabil.svg>`
 
-Wird der Hauptschalter :math:`S_{\rm{0}}` im :ref:`Schema einer astabilen
-Kippschaltung <fig-kippschaltung-astabil>` geschlossen, so laden sich die beiden
+Wird der Hauptschalter :math:`S_0` im :ref:`Schema einer astabilen Kippschaltung
+<fig-kippschaltung-astabil>` geschlossen, so laden sich die beiden
 (Elektrolyt-)Kondensatoren :math:`C_1` und :math:`C_2` gemäß der eingezeichneten
 Polung auf. Grund dafür sind die ungleich großen Widerstandswerte :math:`R_1 =
 R_4` und :math:`R_2 = R _3` der symmetrischen Schaltungsanordnung: Da die
@@ -133,35 +138,44 @@ vorhergesagt werden -- da die Schaltung aus zwei baugleichen Hälften besteht,
 entscheiden kleine Abweichungen der Bauteile von ihren Sollwerten darüber, auf
 welcher Seite der Einschaltvorgang schneller verläuft.
 
-..
-    todo:
-    Fussnote: Abänderung der Schaltung, um ersten Schaltvorgang vorhersagbar zu
-    machen..
+.. todo Fussnote: Abänderung der Schaltung, um ersten Schaltvorgang vorhersagbar
+.. zu machen..
 
-* Schaltet der Transistor :math:`T_1`, so fließt die positive Ladung von der
-  ``+``-Seite des Kondensators :math:`C_1` augenblicklich durch die nun leitende
-  Kollektor-Emitter-Strecke ("Kurzschluss"!) von :math:`T_1` zum Minuspol der
-  Stromquelle ab. Durch diese schnelle Entladung fließen ebenso schnell
-  Elektronen auf die gegenüber liegenden Seite des Kondensators nach, wodurch
-  diese sich negativ auflädt. Da die (nun) negativ geladene Kondensatorfläche
-  direkt mit der Basis des Transistors :math:`T_2` verbunden ist, fehlt auch
-  diesem plötzlich die zum Durchschalten notwendige positive Spannung an seiner
-  Basis -- er sperrt.
+* Schaltet der Transistor :math:`T_1`, so wird seine Kollector-Emitter-Strecke
+  leitend. Hierdurch leuchtet einerseits die LED :math:`D_1` auf, andererseits
+  fließt die Ladung von der ``+``-Seite des Kondensators :math:`C_1`
+  augenblicklich durch die nun leitende Kollektor-Emitter-Strecke
+  ("Kurzschluss"!) von :math:`T_1` zum Minuspol der Stromquelle ab; dadurch
+  sinkt die Spannung am Kondensator :math:`C_1` auf :math:`\unit[0]{V}` ab. Der
+  Kondensator :math:`C_1` ist allerdings ebenso mit der Basis des Transistors
+  :math:`T_2` verbunden, so dass auch diesem plötzlich die zum Durchschalten
+  notwendige positive Spannung an seiner Basis fehlt -- der Transistor
+  :math:`T_2` sperrt also, und die LED :math:`D_2` bleibt dunkel.
 
-  Die negative Ladung des Kondensators wird durch den schwachen Stromfluss über
-  den großen Widerstand :math:`R_2` nur langsam ausgeglichen. Wenn der
-  Kondensator :math:`C_1` vollständig entladen ist, fließt der Strom durch
-  :math:`R_2` zur Basis von :math:`T_2`.
+  Nach der oben beschriebenen Entladung wird der Kondensator :math:`C_1` wieder
+  über durch den schwachen Stromfluss über den großen Widerstand :math:`R_2`
+  langsam in die umgekehrte Richtung aufgeladen; es baut sich im Kondensator
+  also langsam eine Spannung in umgekehrter Richtung, also von der ``-``-Seite
+  zur ``+``-Seite auf. Erreicht diese Spannung, die ebenso am unmittelbar
+  verbundenen Transistor :math:`T_2` anliegt, einen ausreichend hohen Wert
+  (etwa :math:`\unit[0,7]{V}`), so schaltet der Transistor :math:`T_2`.
 
-* Schaltet der Transistor :math:`T_2`, so fließt die positive Ladung von der
-  ``+``-Seite des Kondensators :math:`C_2` augenblicklich durch die nun leitende
-  Kollektor-Emitter-Strecke von :math:`T_2` zum Minuspol der Stromquelle ab.
-  Entsprechend schnell fließen Elektronen zur gegenüber liegenden
-  Kondensatorfläche, deren negative Ladung dann nur langsam über den Stromfluss
-  durch :math:`R_3` ausgeglichen wird. Der Transistor :math:`T_1` erhält solange
-  keinen Stromfluss an seine Basis und sperrt; erst wenn der Kondensator
-  :math:`C_2` vollständig entladen ist, fließt wieder Strom durch :math:`R_3`
-  zur Basis von :math:`T_1`.
+* Schaltet der Transistor :math:`T_2`, so wird dessen Kollector-Emitter-Strecke
+  leitend, und die LED :math:`D_2` leuchtet auf. Gleichzeitig fließt die
+  positive Ladung von der ``+``-Seite des Kondensators :math:`C_2`
+  durch die Kollektor-Emitter-Strecke von :math:`T_2` zum Minuspol der
+  Stromquelle ab. An beiden Seiten des Kondensators :math:`C_2` liegt daher
+  unmittelbar eine Spannung von :math:`\unit[0]{V}` an, so dass der mit der
+  ``-``-Seite des Kondensators verbundene Transistor :math:`T_1` sperrt und die
+  LED :math:`D_1` ausgeht; der Kondensator :math:`C_1` wird dadurch wieder in
+  der ursprünglichen Richtung aufgeladen.
+
+.. Entsprechend schnell fließen Elektronen zur gegenüber liegenden
+.. Kondensatorfläche, deren negative Ladung dann nur langsam über den Stromfluss
+.. durch :math:`R_3` ausgeglichen wird. Der Transistor :math:`T_1` erhält solange
+.. keinen Stromfluss an seine Basis und sperrt; erst wenn der Kondensator
+.. :math:`C_2` vollständig entladen ist, fließt wieder Strom durch :math:`R_3`
+.. zur Basis von :math:`T_1`.
 
 .. figure::
     ../pics/schaltungen/kippschaltung-astabil-funktionsweise.png
@@ -186,22 +200,25 @@ geringen Ladewiderständen kann die Frequenz durchaus auch einige
 :math:`\unit{kHz}` oder sogar :math:`\unit{MHz}` betragen.
 
 Da die Ströme, die durch die LEDs :math:`D_1` bzw. :math:`D_2` fließen, auch
-anderweitig abgegriffen werden können, eignen sich astabile Kippschaltungen u.a.
-als Taktgeber und Ton- bzw. Signalgeneratoren.
+anderweitig abgegriffen werden können, eignen sich astabile Kippschaltungen
+unter anderem als Taktgeber und Ton- beziehungsweise Signalgeneratoren.
 
-.. index::
-    single: Kippschaltung; monostabil
-.. _Die monostabile Kippschaltung:
+.. }}}
+
+.. index:: Kippschaltung; monostabil
+.. _Monostabile Kippstufe:
+.. _Monostabile Kippschaltung:
 
 Die monostabile Kippschaltung
 -----------------------------
+.. {{{
 
 Eine monostabile Kippschaltung (auch "Mono-Flop" genannt) hat nur einen stabilen
 Zustand. Durch Betätigung eines Schalters kann sie in einen anderen Zustand
 versetzt werden, wobei sie nach einer gewissen Zeit wieder in den stabilen
 Grundzustand zurückkehrt. In der Praxis ist eine derartige Schaltung zur Hälfte
-aus einer :ref:`bistabilen Kippschaltung <Die bistabile Kippschaltung>` und zur
-Hälfte aus einer :ref:`astabilen Kippschaltung <Die astabile Kippschaltung>`
+aus einer :ref:`bistabilen Kippschaltung <Bistabile Kippschaltung>` und zur
+Hälfte aus einer :ref:`astabilen Kippschaltung <Astabile Kippschaltung>`
 aufgebaut.
 
 .. figure::
@@ -231,15 +248,20 @@ Widerstand :math:`R_5`. Somit schaltet im Grundzustand der Transistor
   (schwachen) Widerstand :math:`R_3` zur Basis von :math:`T_1` als durch den
   starken Widerstand :math:`R_2` zur Basis von :math:`T_2`. Der Transistor
   :math:`T_1` schaltet somit durch, seine Kollektor-Emitter-Strecke wird
-  leitend. Dadurch leuchtet einerseits die Leuchtdiode :math:`D_1` auf,
-  andererseits wird die ``+``-Seite des Kondensators :math:`C_1` schlagartig
-  entladen; die negative Ladung seiner gegenüberliegenden Seite wird nur langsam
-  durch den schwachen Strom über :math:`R_2` ausgeglichen.
+  leitend. Dadurch leuchtet einerseits die Leuchtdiode :math:`D_1` auf. Der
+  Kondensator :math:`C_1` wird dadurch schlagartig entladen; auf beiden Seiten
+  liegt dadurch unmittelbar eine Spannung von :math:`\unit[0]{V}` an. Der mit
+  dem Kondensator verbundene Transistor :math:`T_2` sperrt dadurch.
 
-* Solange der Kondensator über :math:`R_2` entladen wird, sperrt der Transistor
-  :math:`T_2` -- auch wenn der Schalter :math:`S_1` wieder geöffnet wird. Sobald
-  der Kondensator entladen ist, fließt wiederum Strom zur Basis von :math:`T_2`,
-  und die Schaltung kehrt in ihren Grundzustand zurück.
+  Durch den Widerstand :math:`R_2` wird der Kondensator anschließend langsam in
+  die umgekehrte Richtung aufgeladen. Erreicht die sich dadurch aufbauende
+  Spannung einen ausreichend hohen Wert (etwa :math:`\unit[0,7]{V}`), so
+  schaltet der Transistor :math:`T_2` wiederum und die Leuchtdiode :math:`D_2`
+  leuchtet auf. Da die Kollektor-Emitter-Strecke des Transistors :math:`T_2`
+  leitend ist (und somit unmittelbar mit dem Minus-Anschluss der Stromquelle
+  verbunden ist), kann kein Strom mehr durch den Widerstand :math:`R_5` mehr zum
+  Transistor :math:`T_1` fließen -- dieser sperrt also, und die Leuchtdiode
+  :math:`D_1` erlischt. Die Schaltung kehrt somit in ihren Grundzustand zurück.
 
 .. figure::
     ../pics/schaltungen/kippschaltung-monostabil-funktionsweise.png
@@ -266,6 +288,82 @@ Weile von selbst wieder abschaltet. Darüber hinaus werden monostabile
 Kippschaltungen als Impulsgeneratoren verwendet; anstelle des mechanischen
 Schalters werden dabei elektrische Spannungssignale zum Umschalten genutzt.
 
+.. }}}
+
+.. .. _Kipp-Schaltungen mit dem NE555:
+
+.. Kipp-Schaltungen mit dem NE555
+.. ------------------------------
+
+.. Der NE555 kann unter anderem als "Impulsgenerator" verwendet werden. Einen
+.. Impulsgenerator kann man sich vorstellen wie einen Taster, der in regelmäßigen
+.. Abständen gedrückt wird und eine Spannung dadurch abwechselnd (im gedrückten
+.. Zustand) mit Spannung versorgt beziehungsweise (im offenen Zustand) die
+.. Spannungsversorgung unterbricht. Eine automatisch so ablaufende Schaltung ist
+.. beispielsweise die :ref:`astabile Kippstufe <astabile Kippstufe>`, in der
+.. abwechselnd je eine der zwei LEDs zum Leuchten gebracht wird.
+
+.. Mit einem NE555 kann man eine derartige Funktion mittels folgender Schaltung
+.. realisieren:
+
+.. .. image:: /home/waldgeist/ne555-impulsgenerator.png
+..     :align: center
+..     :width: 50%
+
+.. .. Sehen wir uns nun eine Schaltung an, bei der eine Periodendauer von knapp einer Sekunde erzeugt wird oder
+.. .. anders ausgedrückt: die LED blinkt im Sekundenrythmus.
+
+.. Ist der Taster :math:`S` geschlossen, so ist Pin ``4`` mit dem Masse-Anschluss
+.. (``GND``) verbunden, und die Impulsgenerierung ist unterbrochen. Lässt man den
+.. Taster hingegen los, so wird der ``Reset``-Eingang freigegeben und die Schaltung
+.. arbeitet.
+
+.. Die Impulsfrequenz wird über die Bauteile :math:`R_1`, :math:`R_2` und :math:`C`
+.. bestimmt:
+
+.. * Für die Dauer des Impulses gilt:
+
+..   .. math::
+
+..       T_{\mathrm{up}} = 0,67 \cdot C \cdot (R_1 + R_2)
+
+.. * Für die Dauer der Pause (zwischen den einzelnen Impulsen) gilt:
+
+..   .. math::
+
+..       T_{\mathrm{up}} = 0,67 \cdot C \cdot R_2
+
+.. * Für die Dauer eines Impulses mitsamt Pause ergibt sich somit:
+
+..   .. math::
+
+..       T_{\mathrm{ges}} = 0,67 \cdot C \cdot (R_1 + 2 \cdot R_2)
+
+.. Der Kehrwert aus der Gesamt-Dauer :math:`T_{\mathrm{ges}}` eines Impulses ist
+.. schließlich gleich der Impuls-Frequenz.
+
+.. Ein Nachteil dieser Schaltung ist das ungleiche Impuls-Pausen-Verhätnis. Die
+.. Impulsdauer ist in dem Beispiel doppelt so lang wie die Pausendauer. Um diesen
+.. Effekt gering zu halten muss man entweder :math:`R_1` möglichst gering wählen
+.. (:math:`\unit[100]{\Omega}` sollte man aber nicht unterschreiten, weil sonst der
+.. Stromfluß zu groß wird) oder man fügt eine zusätzliche Diode zwischen Pin ``7``
+.. und :math:`` ein (im Schaltplan gestrichelt eingezeichnet). :math:`C` wird dann
+.. über :math:`R_1` und die Diode geladen und über :math:`R_2` entladen. Für die
+.. Berechnung der Impulsdauer ist dann nur noch :math:`R_1` entscheidend.
+
+.. :math:`R_1` sollte auch nicht kleiner als :math:`\unit[100]{\Omega}` gewählt
+.. werden, um den Entladetransistor im Inneren des ICs nicht zu überlasten. Beide
+.. Widerstände sollten aber auch nicht größer als :math:`\unit[10]{M \Omega}` sein.
+.. Der Wert von :math:`C` ist hingegen nahezu beliebig. Damit bleibt genügend
+.. Spielraum für Experimente.
+
+.. Bezüglich der Genauigkeit sollte man bei dieser Schaltung keine allzu hohen
+.. Ansprüche stellen, denn die hängt im wesentlichen von :math:`R_1`, :math:`R_2`
+.. und :math:`C` ab. Es gibt zwar sehr präzise Widerstände mit nur :math:`1\%`
+.. Abweichung, bei Kondensatoren (insbesondere bei Elektrolyt-Kondensatoren)
+.. allerdings sind durchaus bis zu :math:`20\%` Abweichung vom Soll-Wert möglich.
+
+
 
 .. raw:: html
 
@@ -275,6 +373,20 @@ Schalters werden dabei elektrische Spannungssignale zum Umschalten genutzt.
 
     .. rubric:: Anmerkungen:
 
+.. [#] Man kann in die abgebildete Schaltung :ref:`Schema einer bistabilen
+    Kippschaltung <fig-kippschaltung-bistabil>` zusätzlich eine gewöhnliche
+    Diode noch vor der Verzweigung, also unmittelbar in Reihe mit der
+    Stromquelle einbauen; das gleiche gilt für die folgenden Kippstufen. Dies
+    ist zwar nicht erforderlich, stellt jedoch einen Verpolungs-Schutz dar,
+    falls die Batterie falsch herum eingebaut wird. Die Diode als "elektronische
+    Einbahnstraße" verhindert in diesem Fall eine mögliche Beschädigung der
+    Transistoren.
+
+    Ebenso kann man sich einen der beiden :math:`\unit[470]{\Omega}`-Widerstände
+    sparen, indem man den anderen noch vor den Verzweigungen, also unmittelbar
+    in Reihe mit der Stromquelle schaltet; die Aufgabe dieses Widerstands liegt
+    lediglich darin, die eingebauten LEDs vor zu hohen Stromstärken zu schützen.
+
 .. [#] Um die Symmetrie der Anordnung zu betonen und die Schaltung
     übersichtlicher zu machen, ist der linke Transistor im Spiegelbild
     gezeichnet.
@@ -283,4 +395,8 @@ Schalters werden dabei elektrische Spannungssignale zum Umschalten genutzt.
     einer bistabilen Kippsschaltung <fig-kippschaltung-bistabil-funktionsweise>`
     (Bild oben links) über die leitende Kollektor-Emitter-Strecke gleichermaßen
     mit dem Minuspol der Stromquelle kurzgeschlossen.
+
+.. [#] Für einen konkreten Schaltungsaufbau sind beispielsweise folgende
+    Bauteile geeignet: :math:`R_2 = R_3 = \unit[10]{k \Omega}`, :math:`C_1=C_2 =
+    \unit[100]{\mu F}`, und :math:`R_1 = R_4 = \unit[470]{\Omega}`
 

@@ -324,46 +324,6 @@ Toleranz von :math:`5\%` erlaubt -- der tatsächliche Wert des Widerstands
 liegt somit zwischen :math:`\unit[446,5]{\Omega }` und :math:`493,5` Ohm.
 
 
-.. todo::
-
-    Belastbarkeit von Widerstaenden
-    Widerstandsreihe http://www.elektronik-kompendium.de/sites/bau/1109071.htm
-
-
-.. index::
-    single: Widerstand; Fotowiderstand
-
-.. _Fotowiderstand:
-
-Fotowiderstände
----------------
-
-Fotowiderstände -- auch "LDR" (Light Dependend Resistor) genannt -- haben, wenn
-sie voll beleuchtet werden, einen Widerstand von einigen hundert
-:math:`\unit[]{\Omega}`. Bei sinkender Lichtintensität steigt der Widerstand --
-je nach Bauart -- bis auf einige :math:`\unit[]{M \Omega}` an.
-
-.. figure::
-    ../pics/bauteile/schaltzeichen-widerstand-fotowiderstand.png
-    :name: fig-fotowiderstand
-    :alt:  fig-fotowiderstand
-    :align: center
-    :width: 30%
-
-    Schaltzeichen eines Fotowiderstandes.
-
-    .. only:: html
-
-        :download:`SVG: Schaltzeichen Fotowiderstand
-        <../pics/bauteile/schaltzeichen-widerstand-fotowiderstand.svg>`
-
-Die Widerstandsänderung eines Fotowiderstands geschieht vergleichsweise langsam;
-sie kann mit Hilfe eines Ohmmeters bei verschiedenen Beleuchtungsstärken leicht
-beobachtet werden. Gleichzeitig sind Fotowiderstände aufgrund ihrer "Trägheit"
-nicht für schnelle optische Signalübertragungen (z.B. Infrarot-Fernbedienungen)
-geeignet. Hierfür werden vielmehr Fotodioden und Fototransistoren eingesetzt.
-
-
 .. _Temperaturabhängige Widerstände:
 
 Temperaturabhängige Widerstände
@@ -398,6 +358,9 @@ Temperaturen zunimmt.
         :download:`SVG: Schaltzeichen Kaltleiter (PTC)
         <../pics/bauteile/schaltzeichen-widerstand-kaltleiter.svg>`
 
+Typische Heißleiter-Werkstoffe sind beispielsweise Kohle, Halbleiter, oder
+bestimmte Metall-Oxide; sie werden unter anderem als schnelle und robuste
+Temperaturfühler sowie zur Spannungsstabilisierung verwendet.
 
 .. index:: NTC-Widerstand
 
@@ -422,6 +385,93 @@ Temperaturen abnimmt.
 
         :download:`SVG: Schaltzeichen Heißleiter (NTC)
         <../pics/bauteile/schaltzeichen-widerstand-heissleiter.svg>`
+
+Typische Kaltleiter-Werkstoffe sind beispielsweise reine Metalle oder
+halbleitende Werkstoffe aus Titanat-Keramiken wie :math:`\ce{BaTiO3}` oder
+:math:`\ce{3eSrTiO3}`; sie werden unter anderem als Temperaturfühler,
+Thermostate sowie zur Stromstabilisierung verwendet.
+
+.. Kaum temperaturabhängig: Konstantan?, Manganin, Nickelin
+
+.. index:: Widerstand; Fotowiderstand
+.. _Fotowiderstand:
+
+Fotowiderstände
+---------------
+
+Fotowiderstände -- auch "LDR" (Light Dependend Resistor) genannt -- haben, wenn
+sie voll beleuchtet werden, einen Widerstand von einigen hundert
+:math:`\unit[]{\Omega}`. Bei sinkender Lichtintensität steigt der Widerstand --
+je nach Bauart -- bis auf einige :math:`\unit[]{M \Omega}` an.
+
+.. figure::
+    ../pics/bauteile/schaltzeichen-widerstand-fotowiderstand.png
+    :name: fig-fotowiderstand
+    :alt:  fig-fotowiderstand
+    :align: center
+    :width: 30%
+
+    Schaltzeichen eines Fotowiderstandes.
+
+    .. only:: html
+
+        :download:`SVG: Schaltzeichen Fotowiderstand
+        <../pics/bauteile/schaltzeichen-widerstand-fotowiderstand.svg>`
+
+Die Widerstandsänderung eines Fotowiderstands geschieht vergleichsweise langsam;
+sie kann mit Hilfe eines Ohmmeters bei verschiedenen Beleuchtungsstärken leicht
+beobachtet werden. Gleichzeitig sind Fotowiderstände aufgrund ihrer "Trägheit"
+nicht für schnelle optische Signalübertragungen (z.B. Infrarot-Fernbedienungen)
+geeignet. Hierfür werden vielmehr Fotodioden und Fototransistoren eingesetzt.
+
+.. _Varistoren:
+
+Varistoren
+----------
+
+Als Varistoren (auch "Voltage Dependend Reistor" oder kurz VDR genannt)
+bezeichnet man elektrische Widerstände, deren Wert von der anliegenden Spannung
+abhängig ist.
+
+.. figure:: ../pics/bauteile/schaltzeichen-widerstand-varistor.png
+    :name: fig-varistor
+    :alt:  fig-varistor
+    :align: center
+    :width: 30%
+
+    Schaltzeichen eines Varistors.
+
+    .. only:: html
+
+        :download:`SVG: Schaltzeichen Varistor
+        <../pics/bauteile/schaltzeichen-widerstand-varistor.svg>`
+
+Die Kennlinie eines Varistors sieht etwa folgendermaßen aus:
+
+.. figure:: ../pics/bauteile/diagramm-kennlinie-varistor.png
+    :name: fig-kennlinie-varistor
+    :alt:  fig-kennlinie-varistor
+    :align: center
+    :width: 60%
+
+    Strom-Spannungs-Kennlinie eines Varistors.
+
+    .. only:: html
+
+        :download:`SVG: Kennlinie eines Varistors
+        <../pics/bauteile/diagramm-kennlinie-varistor.svg>`
+
+Bis zu einer Spannung von knapp :math:`\unit[300]{V}` haben Varistoren einen
+sehr hohen Widerstandswert; ab einer derart hohen Spannung jedoch sinkt ihr
+Widerstandswert erheblich ab. Varistoren werden daher als Überspannungsschutz in
+Netzteilen und Steckdosenleisten eingebaut, um empfindliche elektronische Geräte
+wie Computer vor möglichen Spannungs-Spitzen zu schützen, wie sie beispielsweise
+bei einem Blitz-Einschlag auftreten können.
+
+Da im Bereich der Hobby-Elektronik aus Sicherheitsgründen nicht mit
+Netzspannungen experimentiert wird, werden Varistoren in Bastel-Projekten kaum
+eingesetzt.
+
 
 
 .. _Regelbare Widerstände:

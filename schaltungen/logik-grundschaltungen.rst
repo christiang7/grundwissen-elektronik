@@ -8,25 +8,34 @@ Digitaltechnik. Sie dienen als Umsetzungen für die Rechenoperationen NICHT, UND
 ODER sowie ENTWEDER-ODER der mathematischen Logik. [#]_
 
 Die oben genannten Verknüpfungen lassen sich auf einfache Weise durch
-mechanische Schalter oder etwas komplizierter -- mit elektronischer Steuerung und
-ohne mechanische Bauteile -- durch Transistoren erreichen.
+mechanische Schalter oder -- ohne mechanische Bauteile -- durch Dioden und
+Transistoren erreichen. Man unterscheidet dann zwischen nur zwei möglichen
+Zuständen: 
 
+* Der Zustand HIGH entspricht einem Anliegen von Spannung beziehungsweise dem
+  logischen Wahrheitswert "wahr", 
+* der Zustand LOW entspricht einem Fehlen von Spannung beziehungsweise dem logischen
+  Wahrheitswert "falsch".
+
+Eine übliche Spannung bei der Benutzung logischer Bausteine ist
+:math:`\unit[5]{V}`; diese Spannung ist auch in der USB-Technik und bei der
+Verwendung von Mikrokontrollern (beispielsweise :ref:`Arduinos <Arduino>`)
+üblich.
 
 .. _NICHT-Schaltung:
 
 NICHT-Schaltungen
 -----------------
 
-Eine einfache NICHT-Schaltung lässt sich mit Hilfe eines Schalters bzw. Tasters
-erreichen, der parallel zum Hauptstromkreis (im :ref:`Schema einer
-NICHT-Schaltung (mechanisch) <fig-logikgatter-nicht-mechanisch>` eine LED mit
-Vorwiderstand) geschaltet wird. Ist der Schalter *nicht* geschlossen, so fließt
-Strom durch den Hauptstromkreis -- die LED leuchtet. Wird der Schalter
-geschlossen, so wird dem Hauptstromkreis die nötige Betriebsspannung entzogen.
-[#]_
+Eine einfache NICHT-Schaltung lässt sich mit Hilfe eines Schalters
+beziehungsweise Tasters erreichen, der parallel zum Hauptstromkreis (im
+:ref:`Schema einer NICHT-Schaltung (mechanisch)
+<fig-logikgatter-nicht-mechanisch>` eine LED mit Vorwiderstand) geschaltet wird.
+Ist der Schalter *nicht* geschlossen, so fließt Strom durch den Hauptstromkreis
+-- die LED leuchtet. Wird der Schalter geschlossen, so wird dem Hauptstromkreis
+die nötige Betriebsspannung entzogen. [#]_
 
-.. figure::
-    ../pics/schaltungen/logikgatter-nicht-mechanisch.png
+.. figure:: ../pics/schaltungen/logikgatter-nicht-mechanisch.png
     :name:  fig-logikgatter-nicht-mechanisch
     :alt:   fig-logikgatter-nicht-mechanisch
     :align: center
@@ -40,9 +49,10 @@ geschlossen, so wird dem Hauptstromkreis die nötige Betriebsspannung entzogen.
         <../pics/schaltungen/logikgatter-nicht-mechanisch.svg>`
 
 Durch eine Parallelschaltung wird somit die gewöhnliche Funktion des Schalters
-umgekehrt ("invertiert"). Als Alternative kann ebenso ein Taster bzw. Schalter
-(in Reihe) eingebaut werden, der im Ausgangszustand geschlossen ist und bei
-Betätigung den Stromkreis unterbricht.
+umgekehrt ("invertiert"). Als Alternative kann ebenso ein Taster beziehungsweise
+Schalter (in Reihe) eingebaut werden, der im Ausgangszustand geschlossen ist und
+bei Betätigung den Stromkreis unterbricht.
+
 
 
 .. _UND-Schaltung:
@@ -54,8 +64,7 @@ Eine einfache UND-Schaltung lässt sich durch den Einsatz zweier Schalter oder
 Taster erreichen. Werden diese als Reihenschaltung angeordnet, so kann nur Strom
 fließen, wenn *beide* Schalter gleichzeitig geschlossen sind.
 
-.. figure::
-    ../pics/schaltungen/logikgatter-und-mechanisch.png
+.. figure:: ../pics/schaltungen/logikgatter-und-mechanisch.png
     :name:  fig-logikgatter-und-mechanisch
     :alt:   fig-logikgatter-und-mechanisch
     :align: center
@@ -71,6 +80,13 @@ fließen, wenn *beide* Schalter gleichzeitig geschlossen sind.
 UND-Schaltungen in der obigen Form finden beispielsweise als Sicherheitsschalter
 Verwendung.
 
+.. Als einzelne elektronische Bausteine ("Gatter") haben UND-Schaltungen folgendes
+.. Schaltsymbol:
+
+
+Am Ausgang eines UND-Gatters liegt nur dann der Zustand HIGH an, wenn an allen
+Eingängen der Zustand HIGH anliegt.
+
 
 .. _ODER-Schaltung:
 
@@ -78,12 +94,11 @@ ODER-Schaltungen
 ----------------
 
 Eine einfache ODER-Schaltung lässt sich erreichen, indem zwei (oder mehrere)
-Schalter bzw. Taster parallel zueinander geschaltet werden. Es kann nur dann ein
-Strom im Hauptstromkreis fließen, wenn der eine oder der andere Schalter oder
-beide zugleich geschlossen sind.
+Schalter beziehungsweise Taster parallel zueinander geschaltet werden. Es kann
+nur dann ein Strom im Hauptstromkreis fließen, wenn der eine oder der andere
+Schalter oder beide zugleich geschlossen sind.
 
-.. figure::
-    ../pics/schaltungen/logikgatter-oder-mechanisch.png
+.. figure:: ../pics/schaltungen/logikgatter-oder-mechanisch.png
     :name:  fig-logikgatter-oder-mechanisch
     :alt:   fig-logikgatter-oder-mechanisch
     :align: center
@@ -103,8 +118,7 @@ Transistoren eine positive Spannung angelegt, so wird der Hauptstromkreis
 geschlossen -- die LED im :ref:`Schema einer ODER-Schaltung
 <fig-logikgatter-oder>` leuchtet auf. [#]_
 
-.. figure::
-    ../pics/schaltungen/logikgatter-oder.png
+.. figure:: ../pics/schaltungen/logikgatter-oder.png
     :name:  fig-logikgatter-oder
     :alt:   fig-logikgatter-oder
     :align: center
@@ -143,6 +157,7 @@ geschlossen oder geöffnet, kann kein Strom fließen.
         :download:`SVG: XODER-Schema (mechanisch)
         <../pics/schaltungen/logikgatter-xoder-mechanisch.svg>`
 
+... to be continued ...
 
 .. raw:: html
 
@@ -153,6 +168,7 @@ geschlossen oder geöffnet, kann kein Strom fließen.
     .. rubric:: Anmerkungen:
 
 .. [#]  Siehe :ref:`Verknüpfungen von Aussagen <Verknüpfungen von Aussagen>`.
+
 .. [#]  Bei geschlossenem Schalter sind im :ref:`Schema einer NICHT-Schaltung
         (mechanisch) <fig-logikgatter-nicht-mechanisch>` beide Seiten der LED
         direkt mit dem Minuspol der Stromquelle verbunden. Die Abzweigung zum

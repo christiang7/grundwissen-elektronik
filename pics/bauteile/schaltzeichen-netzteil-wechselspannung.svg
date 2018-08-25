@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="372.04724"
+   height="262.20471"
+   id="svg7549"
+   version="1.1"
+   inkscape:version="0.91 r"
+   sodipodi:docname="schaltzeichen-netzteil-wechselspannung.svg"
+   inkscape:export-filename="/home/waldgeist/data/homepage/pics/Original/bauteile/schaltzeichen-netzteil-wechselspannung.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <title
+     id="title17954">Schaltzeichen eines Netzteils mit Wechselspannung</title>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.7994791"
+     inkscape:cx="75.777816"
+     inkscape:cy="148.7096"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1029"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:object-paths="true">
+    <sodipodi:guide
+       id="guide15466"
+       orientation="262.2047,0"
+       position="0.0,0" />
+    <sodipodi:guide
+       id="guide15468"
+       orientation="262.2047,0"
+       position="186.0236,0" />
+    <sodipodi:guide
+       id="guide15470"
+       orientation="262.2047,0"
+       position="372.0472,0" />
+    <sodipodi:guide
+       id="guide15472"
+       orientation="0,372.0472"
+       position="0,0.0" />
+    <sodipodi:guide
+       id="guide15474"
+       orientation="0,372.0472"
+       position="0,131.1024" />
+    <sodipodi:guide
+       id="guide15476"
+       orientation="0,372.0472"
+       position="0,262.2047" />
+  </sodipodi:namedview>
+  <defs
+     id="defs7551">
+    <marker
+       inkscape:stockid="TriangleInM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleInM"
+       style="overflow:visible">
+      <path
+         id="path13059"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="scale(-0.4,-0.4)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <metadata
+     id="metadata7554">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Schaltzeichen eines Netzteils mit Wechselspannung</dc:title>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-nc-sa/3.0/" />
+        <dc:date>2016-12-12</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Bernhard Grotz</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Bernhard Grotz</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>Bernhard Grotz</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:language>de-DE</dc:language>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>Elektronik</rdf:li>
+            <rdf:li>Schaltzeichen</rdf:li>
+            <rdf:li>Spannungsquelle</rdf:li>
+            <rdf:li>Netzteil mit Wechselspannung</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:prohibits
+           rdf:resource="http://creativecommons.org/ns#CommercialUse" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-790.15746)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Ebene 1">
+    <g
+       transform="translate(-0.74996948,-24.25744)"
+       id="g11934">
+      <g
+         id="g11930">
+        <line
+           style="fill:none;stroke:#1f1a17;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round"
+           class="fil0 str0"
+           x1="73.862152"
+           y1="945.51721"
+           x2="129.18649"
+           y2="945.51721"
+           id="line69376" />
+        <line
+           style="fill:none;stroke:#1f1a17;stroke-width:3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+           class="fil0 str0"
+           x1="243.61073"
+           y1="945.51721"
+           x2="299.68503"
+           y2="945.51721"
+           id="line69382" />
+      </g>
+      <g
+         id="g77483"
+         transform="translate(30.995912,-580.30323)">
+        <circle
+           transform="matrix(4.5422244,0,0,4.5422244,75.997131,1346.4666)"
+           style="fill:none;stroke:#1f1a17;stroke-width:0.66046935;stroke-miterlimit:4;stroke-dasharray:none"
+           sodipodi:ry="4.35006"
+           sodipodi:rx="4.35006"
+           sodipodi:cy="39.485901"
+           sodipodi:cx="9.4012003"
+           class="fil0 str0"
+           cx="9.4012003"
+           cy="39.485901"
+           r="4.35006"
+           id="circle69378" />
+        <circle
+           transform="matrix(4.5422244,0,0,4.5422244,29.997131,1346.4666)"
+           style="fill:none;stroke:#1f1a17;stroke-width:0.66046935;stroke-miterlimit:4;stroke-dasharray:none"
+           sodipodi:ry="4.35006"
+           sodipodi:rx="4.35006"
+           sodipodi:cy="39.485901"
+           sodipodi:cx="35.854401"
+           class="fil0 str0"
+           cx="35.854401"
+           cy="39.485901"
+           r="4.35006"
+           id="circle69380" />
+      </g>
+      <g
+         transform="matrix(0.43563034,0,0,0.43563034,184.91324,269.75461)"
+         id="g77526"
+         style="stroke-width:6.88657284;stroke-miterlimit:4;stroke-dasharray:none">
+        <g
+           id="g162690">
+          <path
+             sodipodi:type="arc"
+             style="fill:none;stroke:#000000;stroke-width:6.88657284;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+             id="path77528"
+             sodipodi:cx="-22.420059"
+             sodipodi:cy="1854.3833"
+             sodipodi:rx="26.690546"
+             sodipodi:ry="26.690546"
+             d="m 4.2704868,1854.3833 a 26.690546,26.690546 0 0 1 -13.3452733,23.1147 26.690546,26.690546 0 0 1 -26.6905465,0 26.690546,26.690546 0 0 1 -13.345272,-23.1147"
+             transform="translate(0,-435.82682)"
+             sodipodi:start="0"
+             sodipodi:end="3.1415927"
+             sodipodi:open="true" />
+          <path
+             sodipodi:open="true"
+             sodipodi:end="3.1415927"
+             sodipodi:start="0"
+             transform="matrix(1,0,0,-1,53.381092,3275.5793)"
+             d="m 4.2704868,1854.3833 a 26.690546,26.690546 0 0 1 -13.3452733,23.1147 26.690546,26.690546 0 0 1 -26.6905465,0 26.690546,26.690546 0 0 1 -13.345272,-23.1147"
+             sodipodi:ry="26.690546"
+             sodipodi:rx="26.690546"
+             sodipodi:cy="1854.3833"
+             sodipodi:cx="-22.420059"
+             id="path77530"
+             style="fill:none;stroke:#000000;stroke-width:6.88657284;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+             sodipodi:type="arc" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

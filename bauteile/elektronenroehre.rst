@@ -8,7 +8,7 @@ Die Erfindung der Elektronenröhre
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Die Erfindung der Elektronenröhre im Jahr 1883 ging ebenfalls auf `Thomas Alva
-Edison <http://de.wikipedia.org/wiki/Thomas_Alva_Edison>`_ zurück. Er brachte in
+Edison <https://de.wikipedia.org/wiki/Thomas_Alva_Edison>`_ zurück. Er brachte in
 den Glaskolben einer seiner Glühlampen eine kleine Metallplatte ein, in der
 Hoffnung, dass sich dadurch die Lampeninnenseite durch die aus dem
 stromdurchflossenen Kohlefaden austretende Rußpartikel nicht schwärzen würde.
@@ -71,8 +71,8 @@ Stromkreis: Ausgehend vom Minuspol der Stromquelle treten die Elektronen an der
 glühenden Kathode aus, strömen durch das Vakuum und fließen über die Anode zum
 Pluspol Stromquelle zurück.
 
-Bei einer Umpolung der angeschlossenen Spannung tritt in der Elektronenröhre
-kein Stromfluss auf. Aufgrund dieser Eigenschaft, elektrischen Strom nur in eine
+Bei einer Umpolung der anliegenden Spannung tritt in der Elektronenröhre kein
+Stromfluss auf. Aufgrund dieser Eigenschaft, elektrischen Strom nur in eine
 Richtung fließen zu lassen, wurden Röhrendioden eine Zeit lang als Gleichrichter
 eingesetzt. Inzwischen wurden sie weitestgehend durch :ref:`Halbleiter-Dioden
 <Diode>` ersetzt, da diese bei gleicher Funktionalität kleiner und

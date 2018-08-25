@@ -2,17 +2,11 @@
 # sys.path.append(os.path.abspath('_ext'))
 
 extensions = [ 
-    # 'matplotlib.sphinxext.mathmpl',
     # 'matplotlib.sphinxext.only_directives',
     # 'matplotlib.sphinxext.plot_directive',
-    'sphinx.ext.autodoc',
-    'sphinx.ext.coverage', 
-    'sphinx.ext.doctest', 
     'sphinx.ext.ifconfig', 
     'sphinx.ext.intersphinx',
-    'sphinx.ext.pngmath',
-    'sphinx.ext.todo', 
-    'sphinx.ext.viewcode',
+    'sphinx.ext.imgmath',
     # 'sphinxcontrib.blockdiag', 
     # 'sphinxcontrib.seqdiag',
 ] 
@@ -21,9 +15,9 @@ templates_path = ['_templates']
 source_suffix = '.rst'
 master_doc = 'index'
 project = 'Grundwissen Elektronik'
-copyright = '2011-2016, Bernhard Grotz'
-version = '0.1.3c'
-release = '0.1.3c'
+copyright = '2011-2017, Bernhard Grotz'
+version = '0.1.6e'
+release = '0.1.6e'
 language = 'de'
 spelling_lang = 'de_DE'
 html_show_copyright = False
@@ -37,6 +31,7 @@ htmlhelp_basename = 'Grundwissen Elektronik'
 html_title = 'Grundwissen Elektronik'
 html_short_title = 'Grundwissen Elektronik'
 html_logo = 'logo.png'
+latex_logo   = 'logo_print.png'
 html_favicon = 'favicon.ico'
 todo_include_todos = False
 number_figures=False
@@ -46,39 +41,47 @@ html_search_language = 'en'
 html_search_options = {'type': 'default'}
 
 trim_footnote_reference_space = True
+today_fmt = '%d.%m.%Y'
 
 latex_preamble = r'''
+\usepackage[T1]{fontenc}
 \usepackage[version=3]{mhchem}
-\usepackage{amsmath, units}
-\usepackage{amsfonts, amssymb, color}
-\usepackage{nicefrac} 
+\usepackage{shadow}
+\usepackage{amsmath, units, array, cancel}
+\usepackage{amsfonts, amssymb,color}
+\usepackage{multicol,pifont,mdframed,lscape}
+\usepackage{nicefrac,marvosym,wasysym, textcomp, gensymb}
+\usepackage[style=english]{csquotes}
 \setlength{\headheight}{15pt}
 \setcounter{secnumdepth}{-1}
 \setcounter{tocdepth}{2}
-\usepackage{pifont,mdframed,lscape}
-\usepackage{nicefrac,marvosym,wasysym, textcomp, gensymb} 
-\usepackage[left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
-\clubpenalty  = 10000 % Disable single lines at the start of a page (Schusterjungen)
-\widowpenalty = 10000 % Disable single lines at the end   of a page (Hurenkinder)
+\clubpenalty  = 10000 % Disable single lines at the start of a page
+\widowpenalty = 10000 % Disable single lines at the end   of a page
 \displaywidowpenalty = 10000
+\newcolumntype{M}[1]{>{\centering\arraybackslash$}m{#1}<{$}}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\usepackage{hyperref,url}
+\hypersetup{
+pdftitle={Grundwissen Elektronik},
+pdfsubject={Ein einführendes Lehrbuch über Elektrotechnik und Elektronik},
+pdfauthor={Bernhard Grotz},
+pdfkeywords={Elektrotechnik} {Elektronik} {Lehrbuch} {Schule} {Übungsaufgaben} {Aufgaben} {Lösungen},
+}
 '''
 
-pngmath_latex_preamble = latex_preamble
+imgmath_latex_preamble = latex_preamble
+
 latex_elements = {
     'preamble': latex_preamble,
-    'classoptions': 'oneside,openany',
-    'papersize': 'a4paper',
-    'pointsize': '12pt',
+    'classoptions': 'oneside,openany,',
+    'papersize': 'a4paper,',
+    'pointsize': '12pt,',
     'fontpkg': '',
     'babel':    '\\usepackage[ngerman]{babel}',
     'fncychap': '',
 }
-
-texinfo_documents = [
-  ('index', 'Grundwissen Elektronik', 'Grundwissen Elektronik',
-   'Bernhard Grotz', 'Grundwissen Elektronik', 'Grundwissen Elektronik',
-   'Miscellaneous'),
-]
 
 latex_documents = [
   ('index', 'grundwissen-elektronik.tex', 'Grundwissen Elektronik',

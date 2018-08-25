@@ -12,7 +12,7 @@ Parallelschaltungen <Reihen- und Parallelschaltungen>`.
 
 .. _srps01:
 
-* Welche Spannung ergibt sich durch eine Reihenschaltung dreier
+* (\*) Welche Spannung ergibt sich durch eine Reihenschaltung dreier
   :math:`\unit[1,5]{V}`-Batterien? Welche Spannung ergibt sich, wenn zwei
   :math:`\unit[1,5]{V}`-Batterien parallel zueinander geschalten werden?
 
@@ -26,9 +26,12 @@ Parallelschaltungen <Reihen- und Parallelschaltungen>`.
 
 .. _srpw01:
 
-* Zwei Stromzweige werden parallel zueinander geschalten; im ersten tritt eine
-  Stromstärke von :math:`\unit[1,8]{A}`, im zweiten eine Stromstärke von
-  :math:`\unit[2,2]{A}` auf. Wie groß ist die sich ergebende Gesamt-Stromstärke?
+* (\**) Wie lässt sich das Gesetz :math:`R_{\mathrm{ges}} = R_1 + R_2` für die
+  Reihenschaltung zweier Widerstände anhand des Ohmschen Gesetzes und der
+  Kirchhoffschen Gesetze herleiten?
+
+  *Tipp:* Betrachte einen Schaltplan mit den beiden Reihen-Widerständen und
+  beispielsweise einer Batterie als Spannungsquelle!
 
   :ref:`Lösung <srpw01l>`
 
@@ -36,11 +39,9 @@ Parallelschaltungen <Reihen- und Parallelschaltungen>`.
 
 .. _srpw02:
 
-* In einem Stromkreis sind zwei Widerstände :math:`R_1 = \unit[100]{\Omega}` und
-  :math:`R_2 = \unit[50]{\Omega}` in Reihe geschaltet. Welchen Gesamtwiderstand
-  hat der Stromkreis? Welche Stromstärke fließt, wenn eine Stromquelle mit einer
-  Spannung von :math:`\unit[9]{V}` angeschlossen wird? Welche (Teil-)Spannungen
-  ergeben sich an den beiden Widerständen?
+* (\*) Zwei Stromzweige werden parallel zueinander geschalten; im ersten tritt eine
+  Stromstärke von :math:`\unit[1,8]{A}`, im zweiten eine Stromstärke von
+  :math:`\unit[2,2]{A}` auf. Wie groß ist die sich ergebende Gesamt-Stromstärke?
 
   :ref:`Lösung <srpw02l>`
 
@@ -48,11 +49,12 @@ Parallelschaltungen <Reihen- und Parallelschaltungen>`.
 
 .. _srpw03:
 
-* In einem Stromkreis sind zwei Widerstände :math:`R_1 = \unit[100]{\Omega }`
-  und :math:`R_2 = \unit[50]{\Omega }` parallel zueinander geschaltet. Welcher
-  Gesamtwiderstand ergibt sich in diesem Fall? Welche Stromstärken fließen durch
-  die einzelnen Widerstände, wenn die Spannung der Stromquelle eine
-  :math:`\unit[9]{V}` beträgt?
+* (\*) In einem Stromkreis sind zwei Widerstände :math:`R_1 = \unit[100]{\Omega}` und
+  :math:`R_2 = \unit[50]{\Omega}` in Reihe geschaltet. Welchen Gesamtwiderstand
+  hat der Stromkreis? Welche Stromstärke fließt, wenn eine Stromquelle mit einer
+  Spannung von :math:`\unit[9]{V}` angeschlossen wird? Welche Spannungen
+  :math:`U_1` beziehungsweise :math:`U_2` ergeben sich an den beiden
+  Widerständen?
 
   :ref:`Lösung <srpw03l>`
 
@@ -60,12 +62,11 @@ Parallelschaltungen <Reihen- und Parallelschaltungen>`.
 
 .. _srpw04:
 
-* Welche Stromstärken und Spannungen treten in einem Stromkreis auf, der aus
-  einer Parallelschaltung von drei Widerständen :math:`R_1 =
-  \unit[100]{\Omega}`, :math:`R_2 = \unit[470]{\Omega}` und :math:`R_3 =
-  \unit[1]{k \Omega}` aufgebaut ist und an dem eine Spannung von :math:`U =
-  \unit[9]{V}` anliegt? Welche Werte ergeben sich bei einer Reihenschaltung der
-  drei Widerstände?
+* (\*) In einem Stromkreis sind zwei Widerstände :math:`R_1 = \unit[100]{\Omega }`
+  und :math:`R_2 = \unit[50]{\Omega }` parallel zueinander geschaltet. Welcher
+  Gesamtwiderstand ergibt sich in diesem Fall? Welche Stromstärken :math:`I_1`
+  beziehungsweise :math:`I_2` fließen durch die einzelnen Widerstände, wenn die
+  Spannung der Stromquelle eine :math:`\unit[9]{V}` beträgt?
 
   :ref:`Lösung <srpw04l>`
 
@@ -73,13 +74,26 @@ Parallelschaltungen <Reihen- und Parallelschaltungen>`.
 
 .. _srpw05:
 
-* In einem Stromkreis sind zwei Widerstände :math:`R_1 = \unit[470]{\Omega}` und
-  :math:`R_2 = \unit[220]{\Omega}` parallel zueinander geschalten; zusätzlich
-  ist der Widerstand :math:`R_3 = \unit[560]{\Omega}` in Reihe eingebaut. Welche
-  Teilströme bzw. -Spannungen ergeben sich an den einzelnen Widerständen, wenn
-  eine Spannung von :math:`\unit[9]{V}` anliegt?
+* (\**) Welche Stromstärken und Spannungen treten in einem Stromkreis auf, der aus
+  einer Parallelschaltung von drei Widerständen :math:`R_1 =
+  \unit[100]{\Omega}`, :math:`R_2 = \unit[470]{\Omega}` und :math:`R_3 =
+  \unit[1]{k \Omega}` aufgebaut ist und an dem eine Spannung von :math:`U =
+  \unit[9]{V}` anliegt? Welche Werte ergeben sich bei einer Reihenschaltung der
+  drei Widerstände?
 
   :ref:`Lösung <srpw05l>`
+
+----
+
+.. _srpw06:
+
+* (\**) In einem Stromkreis sind zwei Widerstände :math:`R_1 = \unit[470]{\Omega}` und
+  :math:`R_2 = \unit[220]{\Omega}` parallel zueinander geschalten; zusätzlich
+  ist der Widerstand :math:`R_3 = \unit[560]{\Omega}` in Reihe eingebaut. Welche
+  Ströme beziehungsweise Spannungen ergeben sich an den einzelnen Widerständen, wenn
+  eine Spannung von :math:`\unit[9]{V}` anliegt?
+
+  :ref:`Lösung <srpw06l>`
 
 ----
 

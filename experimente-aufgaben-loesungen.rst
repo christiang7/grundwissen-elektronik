@@ -1,8 +1,11 @@
 .. _Experimente, Aufgaben und Lösungen:
+.. _Experimente, Übungsaufgaben und Lösungen:
 
-Experimente, Aufgaben und Lösungen
-==================================
+Experimente, Übungsaufgaben und Lösungen
+========================================
 
+.. _Übungsaufgaben:
+.. _Elektronik-Übungsaufgaben:
 
 Übungsaufgaben
 --------------
@@ -13,6 +16,9 @@ Experimente, Aufgaben und Lösungen
     bauteile/aufgaben.rst
     schaltungen/aufgaben.rst
 
+
+.. _Lösungen:
+.. _Elektronik-Lösungen:
 
 Lösungen
 --------

@@ -5,7 +5,7 @@ Glühbirnen
 ==========
 
 Im Jahr 1879 fand `Thomas Alva Edison
-<http://de.wikipedia.org/wiki/Thomas_Alva_Edison>`_ heraus, dass
+<https://de.wikipedia.org/wiki/Thomas_Alva_Edison>`_ heraus, dass
 stromdurchflossene Kohlefäden zwar weißglühend leuchten, jedoch nicht
 verbrennen, wenn man sie in eine Ummantelung aus Glas steckt und die Luft heraus
 pumpt. Mit dieser Entdeckung gewann die Elektronik schnell an Bedeutung.

@@ -13,6 +13,8 @@ elektronischen Bauteile durch symbolische Schaltzeichen dargestellt.
 .. toctree::
     :maxdepth: 2
 
+    konventionen.rst
+    schaltungs-netzwerke.rst
     knotenregel-und-maschenregel.rst
     reihenschaltung-und-parallelschaltung.rst
     mess-und-pruefschaltungen.rst

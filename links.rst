@@ -1,84 +1,162 @@
 Links
 =====
 
+.. _Elektronik-Anleitungen:
+
 .. rubric:: Elektronik-Anleitungen
 
 Die folgenden Seiten bieten gute Einsteiger-Tutorials und/oder Pläne zum
 Nachbau eigener Schaltungen:
 
-* `Die Elektronikerseite <http://dieelektronikerseite.de/>`_
-* `Elektronik-Fibel <http://www.elektronik-kompendium.de/sites/grd/index.htm>`_
-* `Electronicsplanet <http://www.electronicsplanet.ch/indexes/ix_schal.html>`_
-* `Elektronikbasteln <https://sites.google.com/site/bastelnelektroelektrik/home>`_
-* `Elektronik-Ecke <http://pitts-electronics-home.de/electron/elececke.htm>`_
-* `Ferromel Elektronik <http://www.ferromel.de/>`_
-* `Loetstelle <http://www.loetstelle.net/index.php>`_
-* `Elektroniktutor <http://www.elektroniktutor.de>`_
-* `Electronicsplanet <http://www.electronicsplanet.ch/indexes/ix_schal.html>`_
-* `JugendTechnikSchule <http://jugendtechnikschule.de/front_content.php?idcat=387>`_
+* `Die Elektronikerseite <http://dieelektronikerseite.de/>`__
+* `Elektronik-Fibel <http://www.elektronik-kompendium.de/sites/grd/index.htm>`__
+* `Electronicsplanet <http://www.electronicsplanet.ch/indexes/ix_schal.html>`__
+* `Elektronikbasteln <https://sites.google.com/site/bastelnelektroelektrik/home>`__
+* `Elektronik-Ecke <http://pitts-electronics-home.de/electron/elececke.htm>`__
+* `Ferromel Elektronik <http://www.ferromel.de/>`__
+* `Loetstelle <http://www.loetstelle.net/index.php>`__
+* `Elektroniktutor <http://elektroniktutor.de>`__
+* `Electronicsplanet <http://www.electronicsplanet.ch/indexes/ix_schal.html>`__
+* `JugendTechnikSchule <http://jugendtechnikschule.de/front_content.php?idcat=387>`__
+* `Kreative Kiste <http://www.kreativekiste.de/bastelideen/basteln-mit-9-volt>`__
+* `Elexs Grundlagen und Experimente <http://www.elexs.de>`_
 
 ..
     * `Bauanleitung Mendocino-Motor <http://mendocinomotor.de/Bauanleitung/1,000000869441,8,1>`_
 
+.. rubric:: Elektronik-Bücher
+
+* `Grundlagen der Elektronik (Stefan Goßner)
+  <http://vg09.met.vgwort.de/na/6d3c048d2def400da0a254f7c185cdfc?l=http://www.prof-gossner.eu/pdf/Gesamtbuch7.pdf>`__
+
+
+.. _Datenblätter:
+
 .. rubric:: Datenblätter
 
-* http://www.datasheetcatalog.net/de/
-* http://www.alldatasheetde.com/
+* `All Datasheets (de.) <http://www.alldatasheetde.com/>`__
+* `Datasheet-Catalog (de.) <http://www.datasheetcatalog.net/de/>`__
 
-.. rubric:: Elektronik-Simulationsprogramme
+.. _Elektronik-Programme:
+
+.. rubric:: Elektronik-Programme
 
 Obwohl Elektronik sehr weit verbreitet ist, gibt es nur wenige frei nutzbare
 Programme zum Simulieren von elektronischen Schaltungen am Computer. Die besten
 Erfahrungen habe ich bislang mit folgenden beiden Programmen gemacht:
 
-* `Fritzing <http://fritzing.org/>`_: Dieses an der Fachhochschule Potsdam
+.. index:: Fritzing (Software)
+
+* `Fritzing <http://fritzing.org/home>`__: Dieses an der Fachhochschule Potsdam
   entwickelte Open-Source-Programm ermöglicht es, erprobte Schaltungen auf einem
   virtuellen Steckbrett (Breadboard) nachzubauen und dabei einen entsprechenden
   Schaltplan bzw. ein passendes Platinen-Layout zu erhalten. Für letzteres gibt
   es eine optimierende "Auto-Routing"-Funktion, die fertig entwickelbare
   Platinen-Layouts liefert (ähnlich wie das bekannte Freeware-Programm `Eagle
-  <http://www.cadsoft.de/?language=de>`_) .
+  <https://cadsoft.io>`__) .
 
-* `LTSpice <http://www.linear.com/designtools/software/#LTspice>`_: Dieses
-  Programm ist zwar nicht Open Source, aber immerhin als Freeware frei nutzbar;
-  unter Linux läuft es mittels Wine ohne Probleme. Als Simulations-Werkzeug
-  ermöglicht LTSpice es, ohne Lernaufwand innerhalb kürzester Zeit
-  Schaltpläne nachzubilden und auftretende Spannungen bzw. Stromstärken zu
-  simulieren; der zeitliche Verlauf an beliebigen Stellen des Schaltplans wird
-  in Diagramm-Form (wie bei einem Oszilloskop) angezeigt.
-
-  Open-Source-Alternativen, die jedoch ewas Einarbeitungs-Zeit erfordern, sind
-  `gEDA <http://wiki.geda-project.org/>`_ und `Qucs
-  <https://de.wikipedia.org/wiki/Qucs>`_. Eine kostenlose Webbrowser-Applikation
-  gibt es unter http://www.partsim.com/.
+* `Qucs <https://de.wikipedia.org/wiki/Qucs>`__. ("Quite Universal Circuit
+  Simulator) ist ein freies Programm zum Simulieren von Schaltkreisen; auf
+  dieses Programm wird im Abschnitt :ref:`Qucs <Simulationen mit QUCS>` näher
+  eingegangen.
 
 .. Qucs
 .. http://www.gnu-darwin.org/www001/src/ports/cad/qucs/work/qucs-0.0.12/qucs-help/docs/de/
 
-.. rubric:: Arduino
+.. index:: LT-Spice (Simulations-Software)
 
-* `Arduino-Projekte von Alexander Hinkel <http://arduino-projekte.de/>`_
-* `Deskfactory: Arduino-Projekte von Robert Jänisch <http://deskfactory.de>`_
+* `LT-Spice <http://www.linear.com/designtools/software/#LTspice>`__: Dieses
+  Programm ist zwar nicht Open Source, aber immerhin als Freeware frei nutzbar;
+  unter Linux läuft es mittels :ref:`Wine <gwl:Emulieren von
+  Windows-Programmen>` ohne Probleme. Als Simulations-Werkzeug ermöglicht
+  LTSpice es, ohne Lernaufwand innerhalb kürzester Zeit Schaltpläne nachzubilden
+  und auftretende Spannungen bzw. Stromstärken zu simulieren; der zeitliche
+  Verlauf an beliebigen Stellen des Schaltplans wird in Diagramm-Form (wie bei
+  einem Oszilloskop) angezeigt.
+
+* Eine weitere kostenlose, aber nicht quellfreie Webbrowser-Applikation
+  gibt es unter http://www.partsim.com/.
+
+* Für die Programmiersprache :ref:`Python3 <Python3>` gibt es ebenfalls ein
+  Simulations-Modul namens `PySpice <https://pypi.python.org/pypi/PySpice>`__;
+  dieses ist allerdings noch im Aufbau (es gibt beispielsweise noch keine
+  Bedienoberfläche).
+
+.. Python Modul: LCapy
+.. http://lcapy.elec.canterbury.ac.nz/
+
+
+.. rubric:: Videos: Allgemeine Elektronik
+
+* `Elektronik-Live-Kurs von Clifford Wolf <https://www.youtube.com/playlist?list=PLEKc1IKctRPDJZZt95yaG-VEnu2SgKj0Y>`__
+* `Video-Reihe von PyroElectro 1 (en.) <https://www.youtube.com/playlist?list=PLx8wqYaEHy5NdQ4onbODjP8-_IJHZvxY4>`__
+* `Video-Reihe Technik von "Educational Videos and Lectures"
+  <https://www.youtube.com/playlist?list=PLdId9dvaMGZNnBGOt9bL2xCzHb_-RtbH->`__
+
+.. rubric:: Videos: Analog-Elektronik
+
+* `Video-Reihe von PyroElectro 2 (en.) <https://www.youtube.com/playlist?list=PLx8wqYaEHy5Mxx2nQQHst_U9DZItgA2Bp>`__
+
+.. rubric:: Videos: Digital-Elektronik
+
+* `Video-Reihe von PyroElectro 3 (en.) <https://www.youtube.com/playlist?list=PLx8wqYaEHy5NLtl76oOufT1EPUSKgVulu>`__
+* `Video-Reihe von Derek Molloy (en.) <https://www.youtube.com/playlist?list=PL5FF254536988FB37>`__
+* `Video-Reihe 8-Bit-Steckbrett-Computer von Ben Eater <https://www.youtube.com/watch?v=HyznrdDSSGM&list=PLowKtXNTBypGqImE405J2565dvjafglHU>`__
+
+.. rubric:: Videos: Mikro-Controller
+
+* `Video-Reihe von PyroElectro 4 (en.) <https://www.youtube.com/playlist?list=PLx8wqYaEHy5NnjAVjq1D9k7hYUldvWcca>`__
+
+
+.. _Arduino:
+
+.. rubric:: Videos und Projekte: Arduino
+
+* `Arduino-Projekte von Alexander Hinkel <http://arduino-projekte.de/>`__
+* `Arduino-Projekte von Robert Jänisch <http://deskfactory.de>`__
+* `Arduino Projetseite "101" (en.) <http://arduinoprojects101.com/tag/arduino-projects/>`__
+
+.. Arduino Einfaches Voltmeter bis 9V
+.. http://arduinoprojects101.com/arduino-voltmeter/
 
 ..
     * `Learning Arduino Episode 1 (en.) <https://www.youtube.com/watch?v=9E779EfPLI4&feature=relmfu>`_
     * `Learning Arduino Episode 2 (en.) <https://www.youtube.com/watch?v=xKwox3dd-dE&feature=relmfu>`_
     * `Learning Arduino Episode 3 (en.) <https://www.youtube.com/watch?v=XQ_hDEoX5w8&feature=relmfu>`_
 
+.. http://howtomechatronics.com/category/tutorials/
 
-.. rubric:: Elektronik-Artikel
+.. _Elektronik-Shops:
+
+.. rubric:: Elektronik-Shops
 
 Wer selbst elektronische Schaltungen ausprobieren möchte, findet bei
 folgenden Online-Shops eine reichliche Auswahl an Bauteilen:
 
-* `CSD <http://www.csd-electronics.de>`_
-* `Pollin <http://www.pollin.de/shop/index.html>`_
-* `Reichelt <http://www.reichelt.de/>`_
-* `Conrad <http://www.conrad.de>`_
-* `ELV <http://www.elv.de/output/controller.aspx>`_
+* `CSD <http://www.csd-electronics.de>`__
+* `Pollin <http://www.pollin.de/shop/index.html>`__
+* `Reichelt <http://www.reichelt.de/>`__
+* `Conrad <https://www.conrad.de>`__
+* `ELV <http://www.elv.de>`__
+
+
+.. rubric:: Arduino-Zubehör
+
+Folgende Shops haben sich auf Open Hardware, Arduinos und allgemein
+Maker-Artikel spezialisiert:
+
+* `Madtronics <http://www.madtronics.de>`__
+* `Komputer Open Source Hardware <http://www.komputer.de/zen/>`__
+* `Exp-Tech Maker Shop <http://www.exp-tech.de/>`__
+* `Elmicro Shop <http://elmicro.com/>`__
+
+.. * `Pimoroni Maker Shop (GB, Paypal only!) <https://shop.pimoroni.de/>`_
+.. * `Segor <http://www.segor.de/>`_
+.. * `Henri <http://www.henri.de/>`_
 
 Messleitungen, Stecker und Buchsen:
 
-* `Firma Schnepp - Elektronische Bauteile und Lichtsysteme <http://www.schnepp-neudenau.de>`_
+* `Elektronische Bauteile und Lichtsysteme (Firma Schnepp) <http://www.schnepp-neudenau.de>`_
 
-..  http://www.henri.de/
+.. jeffrey.ratcliff@gmail.com
+

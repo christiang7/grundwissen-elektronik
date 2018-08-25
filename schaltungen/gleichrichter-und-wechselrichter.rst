@@ -2,17 +2,19 @@
 
 Gleich- und Wechselrichter
 ==========================
+.. {{{
 
 An haushaltsüblichen Steckdosen liegt eine Wechselspannung mit einer effektiven
 Spannung von :math:`U_{\mathrm{eff}} = \unit[230]{V}` an. Diese Spannung kann
 mit eingebauten oder externen Transformatoren ("Netzteilen") leicht auf den
 gewünschten Spannungswert angepasst werden.
 
-Viele elektronische Bauteile (beispielsweise Elektrolytkondensatoren, LEDs bzw.
+Viele elektronische Bauteile (beispielsweise Elektrolytkondensatoren, LEDs,
 Dioden und Transistoren) sind jedoch nicht auf den Betrieb mit Wechselspannung
-bzw. Wechselstrom ausgelegt. Zum Betrieb von Schaltungen mit derartigen
-Bauteilen muss die Wechselspannung in eine entsprechend große Gleichspannung
-umgewandelt werden. Dies geschieht mit so genannten Gleichrichtern.
+beziehungsweise Wechselstrom ausgelegt. Zum Betrieb von Schaltungen mit
+derartigen Bauteilen muss die Wechselspannung in eine entsprechend große
+Gleichspannung umgewandelt werden. Dies geschieht mit so genannten
+Gleichrichtern.
 
 Umgekehrt kann eine Gleichspannung auch in eine Wechselspannung umgewandelt
 werden. Dies ist beispielsweise im Radio- und Fernsteuerungs-Bereich nötig, um
@@ -23,9 +25,14 @@ einspeisen möchte. Allgemein werden derartige Schaltungen, die eine
 Gleichspannung in eine entsprechend große Wechselspannung umwandeln,
 Wechselrichter genannt.
 
+.. _Gleichrichter-Schaltungen:
+
+.. }}}
 
 Gleichrichter-Schaltungen
 -------------------------
+.. {{{
+.. {{{
 
 Gleichrichter wandeln Wechselspannung in Gleichspannung um. Dazu sind Bauteile
 nötig, die den Strom nur in einer Richtung passieren lassen und in der anderen
@@ -36,9 +43,13 @@ Die folgenden Schaltungen setzen zum sicheren Experimentieren eine
 Wechselspannung von ungefähr :math:`\unit[9]{V} < U_{\mathrm{eff}} <
 \unit[12]{V}` voraus, wie sie von Labornetzteilen bereitgestellt wird. [#]_
 
+.. _Der Einweg-Gleichrichter:
+
+.. }}}
 
 Der Einweg-Gleichrichter
 ^^^^^^^^^^^^^^^^^^^^^^^^
+.. {{{
 
 Am einfachsten lässt sich ein Gleichrichter durch die folgende Schaltung
 realisieren:
@@ -94,8 +105,11 @@ Spannung zwischenzeitlich stark, eventuell sogar auf null absinken kann.
 
 .. _Zweiweg-Gleichrichter:
 
+.. }}}
+
 Zweiweg-Gleichrichter
 ^^^^^^^^^^^^^^^^^^^^^
+.. {{{
 
 Durch den Einsatz von vier Dioden lassen sich -- anders als beim
 Einweg-Gleichrichter -- beide Polungen der Stromquelle, d.h. beide Halbbögen
@@ -121,14 +135,14 @@ Die Schaltung funktioniert folgendermaßen:
 * Liegt am oberen Pol der Wechselspannungsquelle eine positive Spannung an, so
   fließt im :ref:`Stromfluss-Diagramm eines Zweiweg-Gleichrichters
   <fig-gleichrichter-zweiweg-funktionsweise>` (linkes Bild) Strom durch die obere
-  linke Diode zum Kondensator bzw. Lastwiderstand und über die untere rechte
+  linke Diode zum Kondensator beziehungsweise Lastwiderstand und über die untere rechte
   Diode zum unteren Pol der Wechselspannungsquelle zurück.
 
 * Liegt am unteren Pol der Wechselspannungsquelle eine positive Spannung an, so
   fließt im :ref:`Stromfluss-Diagramm eines Zweiweg-Gleichrichters
-  <fig-gleichrichter-zweiweg-funktionsweise>` (rechtes Bild) Strom durch die obere
-  rechte Diode zum Kondensator bzw. Lastwiderstand und über die untere linke
-  Diode zum oberen Pol der Wechselspannungsquelle zurück.
+  <fig-gleichrichter-zweiweg-funktionsweise>` (rechtes Bild) Strom durch die
+  obere rechte Diode zum Kondensator beziehungsweise Lastwiderstand und über die
+  untere linke Diode zum oberen Pol der Wechselspannungsquelle zurück.
 
 .. figure::
     ../pics/schaltungen/gleichrichter-zweiweg-funktionsweise.png
@@ -153,38 +167,60 @@ eingesetzt. Die besondere Anordnung der vier Dioden, auch "Grätz-Schaltung"
 genannt, gibt es auch als fertiges Bauelement ("Brückengleichrichter") zu
 kaufen.
 
-.. todo::
+Wie in der folgenden Abbildung  zu sehen ist, ist der Betrag der von einem
+Brückengleichrichter bereitgestellten Gleichspannung zeitlich nicht konstant;
+vielmehr ist deutlich ein "Pulsieren" der Spannung zu erkennen. Um die
+"Spannungstäler" auszugleichen, kann man einen Kondensator parallel zum
+eigentlichen Verbraucher-Stromkreis schalten.
 
-    Pic Brueckengleichrichter
+Der Kondensator wird geladen, während die anliegende Spannung hoch ist, und hält
+wiederum diesen Wert aufrecht, während die anliegende Spannung gering ist. Als
+Faustregel sollten hinter einem Brückengleichrichter je :math:`\unit[1]{A}` an
+Ausgangs-Stromstärke etwa :math:`\unit[100]{\mu F}` an Kondensator-Kapazität
+eingebaut werden.
 
-    Spannungsverlust von 1,5 V beim Brückengleichrichter (wo die
-    Sekundärspannung immer über zwei Gleichrichterdioden gleichzeitig fließen
-    muss).
+
+.. todo Pic Brueckengleichrichter
+
+.. Spannungsverlust von 1,5 V beim Brückengleichrichter (wo die
+.. Sekundärspannung immer über zwei Gleichrichterdioden gleichzeitig fließen
+.. muss).
 
 
 .. _Wechselrichter-Schaltungen:
 
+.. }}}
+
+.. }}}
+
 Wechselrichter-Schaltungen
 --------------------------
+.. {{{
 
 Wechselrichter wandeln Gleichspannung in Wechselspannung um. Hierzu werden
 Polwechsler eingesetzt, die mit einer bestimmten Frequenz die Pole der
-Eingangs-Gleichspannung abwechselnd mit den Ausgängen (z.B. Buchsen) verbinden.
+Eingangs-Gleichspannung abwechselnd mit den Ausgängen (beispielsweise Buchsen)
+verbinden.
 
 Im einfachsten Fall ist der Polwechsler ein Wechselschalter, der von Hand oder
 elektronisch mit Hilfe eines Relais betätigt wird. Die Frequenz der
 Wechselspannung entspricht hierbei der Schaltfrequenz des Polwechslers.
 
+..
+    todo
+    spannungswandler http://de.wikipedia.org/wiki/DC-DC-Wandler
+    pulsweitenmodulation http://de.wikipedia.org/wiki/Pulsweitenmodulation
+
+... to be continued ...
+
+.. }}}
+
+.. raw:: html
+
+    <hr />
 
 .. only:: html
 
     .. rubric:: Anmerkung:
 
 .. [#]  Niemals mit Netzstrom aus der Steckdose experimenteren, das ist lebensgefährlich!
-
-.. todo::
-
-    spannungswandler http://de.wikipedia.org/wiki/DC-DC-Wandler
-    pulsweitenmodulation http://de.wikipedia.org/wiki/Pulsweitenmodulation
-
-

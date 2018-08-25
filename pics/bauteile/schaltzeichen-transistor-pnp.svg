@@ -2,20 +2,22 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
+   xmlns:ns0="http://www.iki.fi/pav/software/textext/"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="372.04724"
    height="262.20471"
    id="svg7549"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.91 r"
    sodipodi:docname="schaltzeichen-transistor-pnp.svg"
-   inkscape:export-filename="/home/waldgeist/data/pics/physik/Own/elektrizitaet-magnetismus/bauteile/schaltzeichen-transistor-pnp.png"
+   inkscape:export-filename="/home/waldgeist/data/homepage/pics/Original/bauteile/schaltzeichen-transistor-pnp.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <title
@@ -27,14 +29,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.1194815"
-     inkscape:cx="-15.234269"
-     inkscape:cy="193.83894"
+     inkscape:zoom="1.2724238"
+     inkscape:cx="157.78352"
+     inkscape:cy="45.502723"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1280"
-     inkscape:window-height="974"
+     inkscape:window-width="1920"
+     inkscape:window-height="1029"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -545,7 +547,7 @@
          sodipodi:cy="100.86611"
          sodipodi:rx="14.173228"
          sodipodi:ry="10.629921"
-         d="m 435.82676,100.86611 c 0,5.87074 -6.34557,10.62992 -14.17323,10.62992 -7.82765,0 -14.17322,-4.75918 -14.17322,-10.62992 0,-5.870741 6.34557,-10.629919 14.17322,-10.629919 7.82766,0 14.17323,4.759178 14.17323,10.629919 z"
+         d="m 435.82676,100.86611 a 14.173228,10.629921 0 0 1 -14.17323,10.62992 14.173228,10.629921 0 0 1 -14.17322,-10.62992 14.173228,10.629921 0 0 1 14.17322,-10.629919 14.173228,10.629921 0 0 1 14.17323,10.629919 z"
          transform="matrix(-1,0,0,1.33333,895.968,-4.0097)" />
       <path
          style="fill:none;stroke:#000000;stroke-width:0.79686511000000004;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
@@ -570,6 +572,183 @@
          id="path55953"
          sodipodi:nodetypes="ccc"
          inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g17229"
+       transform="matrix(3,0,0,3,-137.86562,609.08499)"
+       ns0:preamble="/home/waldgeist/data/homepage/inkscape-preamble.tex"
+       ns0:text="C">
+      <defs
+         id="defs17231">
+        <g
+           id="g17233">
+          <symbol
+             id="textext-4ae22aad-0"
+             overflow="visible"
+             style="overflow:visible">
+            <path
+               id="path17236"
+               d=""
+               style="stroke:none"
+               inkscape:connector-curvature="0" />
+          </symbol>
+          <symbol
+             id="textext-4ae22aad-1"
+             overflow="visible"
+             style="overflow:visible">
+            <path
+               id="path17239"
+               d="m 0.5625,-3.40625 c 0,2.0625 1.609375,3.625 3.46875,3.625 1.625,0 2.59375,-1.390625 2.59375,-2.546875 C 6.625,-2.421875 6.625,-2.5 6.5,-2.5 6.390625,-2.5 6.390625,-2.4375 6.375,-2.328125 6.296875,-0.90625 5.234375,-0.09375 4.140625,-0.09375 c -0.609375,0 -2.5625,-0.328125 -2.5625,-3.3125 0,-2.96875 1.953125,-3.3125 2.5625,-3.3125 1.078125,0 1.96875,0.90625 2.171875,2.359375 0.015625,0.140625 0.015625,0.171875 0.15625,0.171875 0.15625,0 0.15625,-0.03125 0.15625,-0.234375 l 0,-2.359375 c 0,-0.171875 0,-0.25 -0.109375,-0.25 -0.03125,0 -0.078125,0 -0.15625,0.125 l -0.5,0.734375 C 5.5,-6.53125 4.984375,-7.03125 4.03125,-7.03125 c -1.875,0 -3.46875,1.59375 -3.46875,3.625 z m 0,0"
+               style="stroke:none"
+               inkscape:connector-curvature="0" />
+          </symbol>
+        </g>
+      </defs>
+      <g
+         id="textext-4ae22aad-2">
+        <g
+           id="g17242"
+           style="fill:#000000;fill-opacity:1" />
+      </g>
+    </g>
+    <g
+       ns0:text="E"
+       ns0:preamble="/home/waldgeist/data/homepage/inkscape-preamble.tex"
+       transform="matrix(3,0,0,3,-137.16249,609.03811)"
+       id="g17448">
+      <defs
+         id="defs17450">
+        <g
+           id="g17452">
+          <symbol
+             overflow="visible"
+             id="textext-b4d5ee98-0"
+             style="overflow:visible">
+            <path
+               style="stroke:none"
+               d=""
+               id="path17455"
+               inkscape:connector-curvature="0" />
+          </symbol>
+          <symbol
+             overflow="visible"
+             id="textext-b4d5ee98-1"
+             style="overflow:visible">
+            <path
+               style="stroke:none"
+               d="m 1.359375,-0.78125 c 0,0.359375 -0.03125,0.46875 -0.796875,0.46875 l -0.234375,0 0,0.3125 5.75,0 L 6.5,-2.578125 l -0.25,0 C 6,-1.03125 5.765625,-0.3125 4.0625,-0.3125 l -1.328125,0 C 2.265625,-0.3125 2.25,-0.375 2.25,-0.703125 l 0,-2.671875 0.890625,0 c 0.96875,0 1.078125,0.328125 1.078125,1.171875 l 0.25,0 0,-2.640625 -0.25,0 c 0,0.859375 -0.109375,1.171875 -1.078125,1.171875 l -0.890625,0 0,-2.40625 c 0,-0.328125 0.015625,-0.390625 0.484375,-0.390625 l 1.28125,0 c 1.53125,0 1.796875,0.546875 1.953125,1.9375 l 0.25,0 -0.28125,-2.25 -5.609375,0 0,0.3125 0.234375,0 c 0.765625,0 0.796875,0.109375 0.796875,0.46875 z m 0,0"
+               id="path17458"
+               inkscape:connector-curvature="0" />
+          </symbol>
+        </g>
+      </defs>
+      <g
+         id="textext-b4d5ee98-2">
+        <g
+           style="fill:#000000;fill-opacity:1"
+           id="g17461">
+          <use
+             xlink:href="#textext-b4d5ee98-1"
+             x="118.801"
+             y="83.403"
+             id="use17463"
+             width="100%"
+             height="100%" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g17687"
+       transform="matrix(3,0,0,3,-253.90036,664.00722)"
+       ns0:preamble="/home/waldgeist/data/homepage/inkscape-preamble.tex"
+       ns0:text="B">
+      <defs
+         id="defs17689">
+        <g
+           id="g17691">
+          <symbol
+             id="textext-f8c4dfed-0"
+             overflow="visible"
+             style="overflow:visible">
+            <path
+               id="path17694"
+               d=""
+               style="stroke:none"
+               inkscape:connector-curvature="0" />
+          </symbol>
+          <symbol
+             id="textext-f8c4dfed-1"
+             overflow="visible"
+             style="overflow:visible">
+            <path
+               id="path17697"
+               d="m 2.21875,-3.65625 0,-2.4375 C 2.21875,-6.4375 2.234375,-6.5 2.703125,-6.5 l 1.234375,0 c 0.96875,0 1.3125,0.84375 1.3125,1.375 0,0.640625 -0.484375,1.46875 -1.59375,1.46875 z M 4.5625,-3.5625 C 5.53125,-3.75 6.21875,-4.390625 6.21875,-5.125 6.21875,-5.984375 5.296875,-6.8125 4,-6.8125 l -3.640625,0 0,0.3125 0.234375,0 c 0.765625,0 0.796875,0.109375 0.796875,0.46875 l 0,5.25 c 0,0.359375 -0.03125,0.46875 -0.796875,0.46875 l -0.234375,0 0,0.3125 3.90625,0 c 1.328125,0 2.21875,-0.890625 2.21875,-1.828125 0,-0.859375 -0.8125,-1.609375 -1.921875,-1.734375 z m -0.609375,3.25 -1.25,0 c -0.46875,0 -0.484375,-0.0625 -0.484375,-0.390625 l 0,-2.71875 1.875,0 C 5.078125,-3.421875 5.5,-2.5 5.5,-1.828125 5.5,-1.125 4.96875,-0.3125 3.953125,-0.3125 Z m 0,0"
+               style="stroke:none"
+               inkscape:connector-curvature="0" />
+          </symbol>
+        </g>
+      </defs>
+      <g
+         id="textext-f8c4dfed-2">
+        <g
+           id="g17700"
+           style="fill:#000000;fill-opacity:1">
+          <use
+             id="use17702"
+             y="83.403"
+             x="118.801"
+             xlink:href="#textext-f8c4dfed-1"
+             width="100%"
+             height="100%" />
+        </g>
+      </g>
+    </g>
+    <g
+       ns0:text="C"
+       ns0:preamble="/home/waldgeist/data/homepage/inkscape-preamble.tex"
+       transform="matrix(3,0,0,3,-137.86562,715.22682)"
+       id="g22641">
+      <defs
+         id="defs22643">
+        <g
+           id="g22645">
+          <symbol
+             style="overflow:visible"
+             overflow="visible"
+             id="symbol22647">
+            <path
+               inkscape:connector-curvature="0"
+               style="stroke:none"
+               d=""
+               id="path22649" />
+          </symbol>
+          <symbol
+             style="overflow:visible"
+             overflow="visible"
+             id="symbol22651">
+            <path
+               inkscape:connector-curvature="0"
+               style="stroke:none"
+               d="m 0.5625,-3.40625 c 0,2.0625 1.609375,3.625 3.46875,3.625 1.625,0 2.59375,-1.390625 2.59375,-2.546875 C 6.625,-2.421875 6.625,-2.5 6.5,-2.5 6.390625,-2.5 6.390625,-2.4375 6.375,-2.328125 6.296875,-0.90625 5.234375,-0.09375 4.140625,-0.09375 c -0.609375,0 -2.5625,-0.328125 -2.5625,-3.3125 0,-2.96875 1.953125,-3.3125 2.5625,-3.3125 1.078125,0 1.96875,0.90625 2.171875,2.359375 0.015625,0.140625 0.015625,0.171875 0.15625,0.171875 0.15625,0 0.15625,-0.03125 0.15625,-0.234375 l 0,-2.359375 c 0,-0.171875 0,-0.25 -0.109375,-0.25 -0.03125,0 -0.078125,0 -0.15625,0.125 l -0.5,0.734375 C 5.5,-6.53125 4.984375,-7.03125 4.03125,-7.03125 c -1.875,0 -3.46875,1.59375 -3.46875,3.625 z m 0,0"
+               id="path22653" />
+          </symbol>
+        </g>
+      </defs>
+      <g
+         id="g22655">
+        <g
+           style="fill:#000000;fill-opacity:1"
+           id="g22657">
+          <use
+             height="100%"
+             width="100%"
+             xlink:href="#textext-4ae22aad-1"
+             x="118.801"
+             y="83.403"
+             id="use22659"
+             transform="translate(0,12.945678)" />
+        </g>
+      </g>
     </g>
   </g>
 </svg>

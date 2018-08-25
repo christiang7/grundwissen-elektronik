@@ -34,11 +34,61 @@ Parallelschaltungen <Reihen- und Parallelschaltungen>`.
 
 ----
 
+.. _Lösungen Reihen- und Parallelschaltungen von Widerständen:
+
 .. rubric:: Reihen- und Parallelschaltungen von Widerständen
 
 ----
 
 .. _srpw01l:
+
+* Bei einer Reihenschaltung von Widerständen treten keine Verzweigungen auf; in
+  jeden Netzwerk-Knoten fließt somit gleich viel Strom hinein, wie aus ihm auch
+  wieder hinausfließt. Es gilt somit :math:`I=\text{konst}` an allen Stellen in
+  der Schaltung.
+
+  Eine Reihenschaltung bildet zudem gemeinsam mit der Spannungsquelle eine
+  Masche. Innerhalb dieser Masche ergeben alle Spannungen in Summe Null. Nach
+  dem Ohmschen Gesetz gilt:
+
+  .. math::
+
+      U_1 &= R_1 \cdot I \\
+      U_2 &= R_2 \cdot I \\
+      U_{\mathrm{ges}} &= R_{\mathrm{ges}} \cdot I \\
+
+  .. image:: ../pics/schaltungen/reihen-und-parallelschaltung-maschenregel-loesung.png
+      :align: center
+      :width: 50%
+
+  .. only:: html
+
+      .. centered:: :download:`SVG: Netzwerk-Knoten (Loesung)
+                        <../pics/schaltungen/reihen-und-parallelschaltung-maschenregel-loesung.svg>`
+
+  Aus der :ref:`Maschenregel <Maschenregel>` ergibt sich:
+
+  .. math::
+
+      U_{\mathrm{ges}} = U_1 + U_2
+
+  Setzt man die aus dem Ohmschen Gesetz resultierenden Ausdrücke in diese
+  Gleichung ein, so erhält man:
+
+  .. math::
+
+      R_{\mathrm{ges}} \cdot I &= R_1 \cdot I + R_2 \cdot I \\
+      \Rightarrow R_{\mathrm{ges}} &=  R_1 + R_2 \quad \checkmark
+
+  Die Formel :math:`R_{\mathrm{ges}} = R_1 + R_2` für die Reihenschaltung zweier
+  Widerstände folgt somit unmittelbar aus dem Ohmschen Gesetz sowie der
+  Kirchhoffschen Maschenregel.
+
+  :ref:`Zurück zur Aufgabe <srpw01>`
+
+----
+
+.. _srpw02l:
 
 * In einer Parallelschaltung ist die Gesamt-Stromstärke :math:`I_{\mathrm{ges}}`
   gleich der Summe der (Teil-)Stromstärken :math:`I_1,\, I_2,\, \ldots ,\,
@@ -53,11 +103,11 @@ Parallelschaltungen <Reihen- und Parallelschaltungen>`.
 
   Die Gesamt-Stromstärke beträgt somit :math:`I_{\mathrm{ges}} = \unit[4,0]{A}`.
 
-  :ref:`Zurück zur Aufgabe <srpw01>`
+  :ref:`Zurück zur Aufgabe <srpw02>`
 
 ----
 
-.. _srpw02l:
+.. _srpw03l:
 
 * Bei einer Reihenschaltung ist der Gesamtwiderstand :math:`R_{\mathrm{ges}}`
   gleich der Summe der einzelnen Widerstandswerte; für eine Reihenschaltung
@@ -101,11 +151,11 @@ Parallelschaltungen <Reihen- und Parallelschaltungen>`.
   im gleichen Verhältnis wie die Werte :math:`R_1` und :math:`R_2` der
   Widerstände :math:`(\frac{U_1}{U_2} = \frac{R_1}{R_2} = \frac{2}{1})`.
 
-  :ref:`Zurück zur Aufgabe <srpw02>`
+  :ref:`Zurück zur Aufgabe <srpw03>`
 
 ----
 
-.. _srpw03l:
+.. _srpw04l:
 
 * Bei einer Parallelschaltung ist der Kehrwert des Gesamtwiderstands
   :math:`\frac{1}{R_{\mathrm{ges}}}` gleich der Summe der Kehrwerte der
@@ -143,11 +193,11 @@ Parallelschaltungen <Reihen- und Parallelschaltungen>`.
   Die Stromstärke beträgt im unverzweigten Teil der Schaltung somit :math:`I =
   \unit[270]{mA}`.
 
-  :ref:`Zurück zur Aufgabe <srpw03>`
+  :ref:`Zurück zur Aufgabe <srpw04>`
 
 ----
 
-.. _srpw04l:
+.. _srpw05l:
 
 * Bei einer Parallelschaltung lässt sich der Kehrwert des Gesamtwiderstands
   :math:`\frac{1}{R_{\mathrm{ges}}}` als Summe der Kehrwerte der einzelnen
@@ -220,11 +270,11 @@ Parallelschaltungen <Reihen- und Parallelschaltungen>`.
   wieder der Gesamtspannung :math:`(U_{\mathrm{ges}} = U_1 + U_2 + U_3 =
   \unit[9]{V})`.
 
-  :ref:`Zurück zur Aufgabe <srpw04>`
+  :ref:`Zurück zur Aufgabe <srpw05>`
 
 ----
 
-.. _srpw05l:
+.. _srpw06l:
 
 * Die Parallelschaltung der beiden Widerstände :math:`R_1 = \unit[470]{\Omega}`
   und :math:`R_2 = \unit[220]{\Omega}` wirkt nach außen wie ein einzelner
@@ -291,7 +341,7 @@ Parallelschaltungen <Reihen- und Parallelschaltungen>`.
   Die Summe der beiden Stromstärken ist wiederum gleich der Stromstärke
   :math:`I_{\mathrm{ges}}` im unverzweigten Stromkreis.
 
-  :ref:`Zurück zur Aufgabe <srpw04>`
+  :ref:`Zurück zur Aufgabe <srpw06>`
 
 ----
 

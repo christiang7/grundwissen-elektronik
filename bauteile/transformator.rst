@@ -164,15 +164,15 @@ somit addiert werden.
 
   .. math::
 
-      U_{\mathrm{1,Leitung}} &= R_0 \cdot I_1 = \unit[1]{\Omega} \cdot
-      \unit[4,92]{A} = \unit[4,92]{V} \\[4pt] 
       U_{\mathrm{1,Verbraucher}} &= R_1 \cdot I_1 \approx \unit[1,44]{\Omega}
-      \cdot \unit[4,92]{A} = \unit[7,08]{V}
+      \cdot \unit[4,92]{A} = \unit[7,08]{V}\\[4pt] 
+      U_{\mathrm{1,Leitung}} &= R_0 \cdot I_1 = \unit[\phantom{,44}1]{\Omega} \cdot
+      \unit[4,92]{A} = \unit[4,92]{V} 
 
   Somit ergibt sich am Verbraucher eine elektrische Leistung von
   :math:`P_{\mathrm{1,Verbraucher}} = U_{\mathrm{1,Verbraucher}} \cdot I_1
   \approx \unit[34,8]{W}`, während eine Leistung von
-  :math:`P_{\mathrm{1,Leitung}} =U_{\mathrm{1,Leitung}} \cdot I_1 \approx
+  :math:`P_{\mathrm{1,Leitung}} = U_{\mathrm{1,Leitung}} \cdot I_1 \approx
   \unit[24,2]{W}` in Form von Wärme an die Leitung abgegeben wird.
 
   Im zweiten Fall ergibt sich ein Gesamtwiderstand von :math:`R_{2,\mathrm{ges}}
@@ -192,10 +192,10 @@ somit addiert werden.
 
   .. math::
 
-      U_{\mathrm{2,Leitung}} &= R_0 \cdot I_2 = \unit[1]{\Omega} \cdot
-      \unit[0,433]{A} = \unit[0,43]{V} \\[4pt] 
       U_{\mathrm{2,Verbraucher}} &= R_2 \cdot I_2 \approx \unit[529]{\Omega}
-      \cdot \unit[0,433]{A} \approx \unit[229,57]{V}
+      \cdot \unit[0,433]{A} \approx \unit[229,57]{V} \\[4pt] 
+      U_{\mathrm{2,Leitung}} &= R_0 \cdot I_2 = \unit[\phantom{52}1]{\Omega} \cdot
+      \unit[0,433]{A} = \unit[0,43]{V}
 
   Somit ergibt sich am Verbraucher eine elektrische Leistung von
   :math:`P_{\mathrm{2,Verbraucher}} = U_{\mathrm{2,Verbraucher}} \cdot I_2
@@ -205,10 +205,14 @@ somit addiert werden.
 
 Wie das obige Beispiel zeigt, wird Elektrizität unter Berücksichtigung des
 (geringen) elektrischen Widerstands realer Leitungen wesentlich effektiver bei
-hohen Spannungen transportiert, da hierbei Wärmeverluste minimiert werden. Die
-an den Leitungen anliegenden, verhältnismäßig hohen Spannungen können innerhalb
-der Verbraucher dann mittels Transformatoren wieder auf den gewünschten Wert
-angepasst werden.
+hohen Spannungen transportiert, da hierbei Wärmeverluste minimiert werden; zudem
+spielt bei Verwendung hoher Spannungen der tatsächliche Wert der
+Leitungs-Widerstände, der je nach Länge der Anschluss-Kabel und Qualität der
+leitenden Verbindungen etwas variieren kann, kaum eine Rolle.
+
+Mittels Transformatoren können die an den Leitungen anliegenden, verhältnismäßig
+hohen Spannungen können innerhalb der jeweiligen elektronischen Geräte dann
+wieder auf den gewünschten Wert angepasst werden.
 
 
 .. raw:: html

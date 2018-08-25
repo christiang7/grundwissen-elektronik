@@ -9,6 +9,9 @@ Dioden
 eine "elektrische Einbahnstraße" dar; elektrischer Strom kann eine
 Halbleiter-Diode in nur einer Richtung passieren.
 
+.. index:: Anode, Kathode
+.. _Anode:
+.. _Kathode:
 .. _Normale Diode:
 
 "Normale" Dioden
@@ -18,9 +21,10 @@ Eine Diode verfügt über zwei Anschlüsse, die als Anode und Kathode bezeichnet
 werden. Strom kann nur durch eine Diode fließen, wenn die Anode zum Plus- und
 die Kathode zum Minus-Pol zeigt; in der Gegenrichtung sperrt sie. Auf dem
 Bauteil ist die Kathoden-Seite durch ein schwarzen oder weißen Ring
-gekennzeichnet. Ab einer anliegenden Spannungsdifferenz von etwa
-:math:`U_{\mathrm{D}} = \unit[0,7]{V}` beginnt in Durchlassrichtung Strom zu
-fließen.
+gekennzeichnet. Ab einer anliegenden Spannung von etwa :math:`U_{\mathrm{D}} =
+\unit[0,7]{V}` bei Silizium-Dioden beziehungsweise :math:`\unit[0,3]{V}` bei
+Germanium-Dioden begint in Durchlassrichtung Strom zu fließen.
+
 
 .. figure::
     ../pics/bauteile/schaltzeichen-diode.png
@@ -37,10 +41,10 @@ fließen.
         :download:`SVG: Schaltzeichen Diode
         <../pics/bauteile/schaltzeichen-diode.svg>`
 
-Beim Durchgang durch eine Diode sinkt die Spannung -- anders als bei Ohmschen
-Widerständen, die zum Durchlassen einer größeren Stromstärke stets auch eine
-größere anliegende elektrische Spannung benötigen -- relativ konstant um
-:math:`\unit[0,7]{V}` -- weitgehend unabhängig von der Stärke des fließenden
+Beim Durchgang durch eine Silicium-Diode fällt die Spannung (anders als bei
+Ohmschen Widerständen, die zum Durchlassen einer größeren Stromstärke stets auch
+eine größere anliegende elektrische Spannung benötigen) relativ konstant um
+:math:`\unit[0,7]{V}` ab -- weitgehend unabhängig von der Stärke des fließenden
 Stroms. Das Ohmsche Gesetz :math:`U = R \cdot I` ist somit nicht auf Dioden
 anwendbar.
 
@@ -79,14 +83,15 @@ zerstört werden.
         :download:`SVG: Kennlinie einer 100-V-Diode in Sperrichtung.
         <../pics/bauteile/kennlinie-diode-sperrrichtung.svg>`
 
-Auf jeder Diode sind daher zwei charakteristische Werte aufgedruckt:
+
+Auf jeder Diode sind zwei charakteristische Werte aufgedruckt:
 
 * Die in Volt angegebene Spannung sagt aus, mit welcher Spannung die Diode
   maximal entgegen der Durchlassrichtung (in "Sperrichtung") betrieben werden
   darf.
 
 * Die in (Milli-)Ampere angegebene Stromstärke gibt an, welcher Strom maximal
-  durch die Diode fließen darf.
+  (in Durchlassrichtung) durch die Diode fließen darf.
 
 Beide Werte dürfen nicht überschritten werden, da die Diode ansonsten zerstört
 werden kann.
@@ -94,10 +99,58 @@ werden kann.
 *Beispiel:*
 
 * Für die Diode ``1N4001`` sind die Werte :math:`\unit[50]{V}/\unit[1]{A}`
-  angegeben -- die maximale Spannung in Sperrichtung darf somit höchstens
+  angegeben; die maximale Spannung in Sperrichtung darf somit höchstens
   :math:`\unit[50]{V}`, die maximale Stromstärke in Durchlassrichtung
   höchstens :math:`\unit[1]{A}` betragen.
 
+.. Diode ``1N4148``:  :math:`\unit[100]{V}/\unit[100]{mA}`
+
+
+.. _Die Shockley-Gleichung:
+
+.. rubric:: Die Shockley-Gleichung
+
+Aus mathematischer Sicht kann die :math:`I(U)`-Kennlinie einer Diode oberhalb
+der Durchbruchspannung durch die sogenannte Shockley-Gleichung beschrieben
+werden:
+
+.. https://de.wikipedia.org/wiki/William_Bradford_Shockley
+
+.. math::
+    :label: eqn-shockley-gleichung
+
+    I = I_{\mathrm{S}} \cdot \left( e ^{\frac{U}{n \cdot U_{\mathrm{T}}}} -1
+    \right)
+
+Hierbei treten folgende Parameter auf:
+
+* :math:`I_{\mathrm{s}}` gibt den Sättigungs-Sperrstrom der Diode an; dieser ist
+  von verschiedenen Bauteileigenschaften sowie der Temperatur abhängig. Bei
+  gewöhnlichen Siliziumdioden und bei Raumtemperatur ist :math:`I_{\mathrm{s}}
+  \approx \unit[10]{\mu A}`.
+* Mit :math:`n` wird der Emissionskoeffizient (eine Materialeigenschaft)
+  bezeichnet; bei einer idealen Diode ist :math:`n=1`, bei einer realen Diode
+  ist :math:`1 < n < 2`. Oft wird :math:`n=1` angenommen und somit aus der
+  Formel weggelassen.
+* :math:`U_{\mathrm{T}}` wird "Temperaturspannung" genannt; sie beträgt bei
+  Raumtemperatur etwa :math:`U_{\mathrm{T}} \approx \unit[0,026]{V}`.
+
+Wie man an der Gleichung :eq:`eqn-shockley-gleichung` erkennen kann, hat die
+:math:`I(U)`-Kennlinie einer Diode einen exponentiellen Verlauf. Derartige
+Kurven lassen sich häufig besser mit Hilfe einer logarithmischen Skala
+darstellen. [#]_
+
+
+.. .. _Prüfen einer Diode:
+
+.. .. rubric:: Prüfen einer Diode
+
+.. Wurde eine Diode durch Überlastung zerstört, so können zweierlei Dinge
+.. passieren: Entweder wurde die Diodenstrecke zerstört und leitet gar nicht mehr,
+.. oder sie hat einen Kurzschluss und leitet immer.
+
+.. Am Einfachsten kann die Funktionalität einer Diode mit Hilfe eines Multimeters
+.. geprüft werden, indem man dieses auf "Durchgangstest" schaltet.
 
 .. index::
     single: Diode; Leuchtdiode (LED)
@@ -156,11 +209,11 @@ schnelle Reaktionszeit: Sie können in einer Sekunde tausende Male ein- und
 wieder ausgeschaltet werden und daher, ähnlich wie früher die "Morse-Tasten",
 bei einer geeigneten Codierung zur Signalübertragung verwendet werden.
 
-.. index::
-    single: Diode; Photodiode
-    single: Photodiode
 
+
+.. index:: Photodiode, Diode; Photodiode
 .. _Photodiode:
+.. _Photodioden:
 
 Photodioden
 -----------
@@ -187,6 +240,7 @@ Ultraviolett- oder im sichtbaren Bereich des Lichts.
 
 
 .. _Solarzelle:
+.. _Solarzellen:
 
 .. rubric:: Solarzellen
 
@@ -208,6 +262,47 @@ Wird eine Solarzelle beleuchtet, dann liegt an ihren Polen eine Spannung von ca.
 :math:`\unit[0,6]{V}` an ("Leerlaufspannung"). Diese Spannung sinkt ab, wenn ein
 Verbraucher angeschlossen wird.
 
+.. index:: Z-Diode, Zener-Diode
+.. _Z-Dioden:
+
+Z-Dioden
+--------
+
+Bei normalen Dioden wird der Effekt genutzt, dass der Strom die Diode nur in
+eine Richtung passieren kann, die Diode also in die Gegenrichtung sperrt.
+Z-Dioden (bisweilen auch nach dem Erfinder `Clarence Zener
+<https://de.wikipedia.org/wiki/Clarence_Melvin_Zener>`__ auch "Zener-Dioden"
+genannt) werden hingegen bewusst so gebaut, dass sie ab einer bestimmten
+(Durchbruch-)Spannung in Gegenrichtung leitfähig werden.
+
+.. figure:: ../pics/bauteile/schaltzeichen-diode-zenerdiode.png
+    :name: fig-schaltzeichen-zenerdiode
+    :alt:  fig-schaltzeichen-zenerdiode
+    :align: center
+    :width: 30%
+
+    Schaltzeichen einer Z-Diode.
+
+    .. only:: html
+
+        :download:`SVG: Schaltzeichen Z-diode
+        <../pics/bauteile/schaltzeichen-diode-zenerdiode.svg>`
+
+Eine Z-Diode verhält sich in Sperrichtung entspricht im Wesentlichen so wie eine
+normale Diode in Vorwärtsrichtung. Hat beispielsweise eine Z-Diode eine
+Durchbruchspannung von :math:`U=\unit[5,\!6]{V}`, so kann erst ab dieser
+Spannung ein Strom in Sperrichtung fließen. Bei höheren Spannungen nimmt die
+Stromstärke (entsprechend der Abbildung :ref:`Kennlinie einer Diode in
+Sperrichtung <fig-kennlinie-diode-sperrichtung>`) stark zu; die auf der Diode
+angegebene Maximal-Stromstärke sollte allerdings nicht überschritten werden.
+[#]_
+
+Beispiele für die Verwendung dieser Dioden gibt es im Abschnitt
+:ref:`Spannungsregelung mit Z-Dioden <Spannungsregelung mit Z-Dioden>`.
+
+.. Werden :math:`Z`-Dioden in Reihe geschalten, so addieren sich ihre
+.. Durchbruch-Spannungen.
+
 .. raw:: html
 
     <hr />
@@ -216,11 +311,29 @@ Verbraucher angeschlossen wird.
 
     .. rubric:: Anmerkung:
 
-.. [#]  Die zulässigen Spannungen von Leuchtdioden sind je nach
+.. [#] Bei einer "normalen" Skalierung steht eine jeweils gleiche Strecke für
+    eine *Addition* eines gleichen Werts. Bei einer logarithmischen Skalierung
+    hingegen drückt eine gleiche Strecke eine *Multiplikation* mit einem
+    gleichen Faktor aus; mit einer logarithmischen Skalierung können somit
+    sowohl kleine wie auch große Zahlenbereiche mit einer gleichen
+    Darstellungstiefe in einem einzigen Diagramm dargestellt werden.
+
+.. [#] Die zulässigen Spannungen von Leuchtdioden sind je nach
     Helligkeit und Farbe unterschiedlich; hierbei sind die Herstellerangaben zu
     beachten. Typischerweise liegt die Betriebsspannung bei roten LEDs bei
     :math:`\unit[1,9]{V}`, bei gelben LEDs bei :math:`\unit[2,0]{V}`, bei
     grünen LEDs bei :math:`\unit[2,4]{V}`. Blaue und weiße LEDs werden
     teilweise sogar mit :math:`3 \text{ bis } \unit[3,5]{V}` betrieben. Die
     Stromstärke liegt jeweils bei :math:`\unit[20]{mA}`.
+
+    Damit LEDs nicht durch zu große Spannungen beziehungsweise Stromstärken
+    zerstört werden können, sollte man beim Betrieb von LEDs stets auf einen
+    passenden :ref:`Vorwiderstand <LED mit Vorwiderstand>` achten.
+
+.. [#] Der Grund für die Bau- und Verwendungsweise von Z-Dioden liegt darin,
+    dass es verhältnismäßig einfach ist, die Durchbruchspannung einer Diode auf
+    beispielsweise :math:`\unit[5,\!6]{V}` exakt festzulegen; es ist hingegen
+    weitaus schwieriger eine Diode zu bauen, die in Vorwärtsrichtung eine derart
+    hohe Spannung benötigt; selbst LEDs lassen die Spannung in Vorwärtsrichtung
+    nur um etwa :math:`2` bis :math:`\unit[3]{V}` absinken, je nach Farbe.
 

@@ -133,7 +133,7 @@ Widerstand kombiniert wird. Hat ein Amperemeter mit einem Messbereich von
 ebenfalls :math:`\unit[10]{\Omega}`, dass nur noch die Hälfte des Stroms durch
 das Amperemeter fließt. Der Messbereich wird somit um den Faktor :math:`2`
 erweitert, so dass mit dem Amperemeter nun Stromstärken bis zu
-:math:`\unit[500]{mA}` gemessen werden können.
+:math:`\unit[100]{mA}` gemessen werden können.
 
 Der Messbereich-Erweiterung von Amperemetern sind nach oben hin ebenfalls kaum
 Grenzen gesetzt. Üblicherweise sind die Parallel-Widerstände bereits im
@@ -170,18 +170,18 @@ Widerstand fließt.
 Die Bestimmung des Widerstands eines Bauteils nach dieser Methode setzt also
 eine Strom- sowie eine Spannungsmessung voraus. Dabei gibt es, wie in der obigen
 Abbildung angedeutet, prinzipiell zwei Möglichkeiten:  Bei Variante :math:`1`
-zeigt das Voltmeter einen zu hohen Wert an, denn ein Teil der am Voltmeter
-anliegenden Spannung fällt am Innenwiderstand des Amperemeters ab. Bei der
-Variante :math:`2` zeigt das Amperemeter einen zu hohen Wert an, denn ein Teil
-des durch das Amperemeter fließenden Stroms fließt anschließend durch das
-Voltmeter.
+zeigt das Voltmeter einen zu hohen Wert an ("Spannungsfehler-Schaltung"), denn
+ein Teil der am Voltmeter anliegenden Spannung fällt am Innenwiderstand des
+Amperemeters ab. Bei der Variante :math:`2` zeigt das Amperemeter einen zu hohen
+Wert an ("Stromfehler-Schaltung"), denn ein Teil des durch das Amperemeter
+fließenden Stroms fließt anschließend durch das Voltmeter.
 
 Der Widerstand eines Bauteils kann auch mit nur einem einzelnen Messgerät
-bestimmt werden, sofern die Spannung bekannt ist. Eine derartige Messung setzt
-voraus, dass das zu messende Bauteil ausgebaut ist oder zumindest der
-Stromkreis, welcher das Bauteil umgibt, nicht geschlossen ist. Das Messgerät,
-meist ein Multimeter, kann dann selbst als Spannungsquelle mit bekanntem
-Spannungswert dienen, sofern darin eine Batterie verbaut ist. Die
+bestimmt werden, sofern die anliegende Spannung bekannt ist. Eine derartige
+Messung setzt voraus, dass das zu messende Bauteil ausgebaut ist oder zumindest
+der Stromkreis, welcher das Bauteil umgibt, nicht geschlossen ist. Das
+Messgerät, meist ein Multimeter, kann dann selbst als Spannungsquelle mit
+bekanntem Spannungswert dienen, sofern darin eine Batterie verbaut ist. Die
 Widerstandsmessung entspricht damit einer Messung der Stromstärke, jedoch mit
 einer entsprechend angepassten Skala.
 
@@ -200,7 +200,7 @@ nach `Charles Wheatstone <https://de.wikipedia.org/wiki/Wheatstone>`__ benannten
     :name:  fig-wheatstonesche-messbruecke
     :alt:   fig-wheatstonesche-messbruecke
     :align: center
-    :width: 55%
+    :width: 45%
 
     Schaltung einer Wheatstoneschen Brücke zur Widerstandsmessung mittels eines
     Amperemeters.

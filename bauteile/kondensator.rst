@@ -1,5 +1,6 @@
 .. index:: Kondensator
 .. _Kondensator:
+.. _Kondensatoren:
 
 Kondensatoren
 =============
@@ -11,9 +12,10 @@ Verwirklichungen von :ref:`Plattenkondensatoren <gwp:Plattenkondensator>` dar.
 
 Kondensatoren werden in elektrischen Schaltkreisen zu vielerlei Zwecken
 eingesetzt: Sie können beispielsweise elektrische Energie zwischenspeichern,
-Schwankungen einer Gleichspannung ausgleichen, Frequenzen filtern oder das
-Verhalten von Kippschaltungen beeinflussen. Sie sind daher als elementares
+Schwankungen in Gleichspannungs-Netzteilen ausgleichen, Frequenzen filtern oder
+das Verhalten von Kippschaltungen beeinflussen. Sie sind daher als elementares
 Bauteil in fast jeder Schaltung zu finden.
+
 
 .. _Normaler Kondensator:
 
@@ -43,9 +45,9 @@ laden sich elektrisch auf.
 
 Während sich der Kondensator durch den externen Stromfluss auflädt, erhöht sich
 die Spannung, die zwischen seinen Metallplatten anliegt -- der Kondensator wird
-selbst zu einer kleinen Stromquelle. Allerdings ist die Menge an elektrischer
-Ladung, die der Kondensator bei einer anliegenden externen Spannung speichern
-kann, begrenzt.
+selbst zu einer kleinen Spannungsquelle. Allerdings ist die Menge an
+elektrischer Ladung, die der Kondensator bei einer anliegenden externen Spannung
+speichern kann, begrenzt.
 
 *Definition:*
     Das Verhältnis aus maximal speicherbarer Ladung :math:`Q` bei einer externen
@@ -122,14 +124,66 @@ Besonderheiten angegeben:
    Kondensator angelegt werden darf (beispielsweise :math:`100` für
    :math:`\unit[100]{Volt}`).
 
+.. todo Notationsbeispiele: 23 = 23 pf ; 182 = 18 00 pf = 1,8 nF usw
+.. todo "Glaubenskrieg" um nF
 
+.. _Anschauliches Modell für Kondensatoren:
+
+.. rubric:: Anschauliches Modell für Kondensatoren
+
+Ein einfaches physikalisches Modell zur Beschreibung von :ref:`Stromstärke,
+Spannung und Widerstand <Stromstärke, Spannung und Widerstand>` ist es, sich
+einen elektrischen Stromfluss wie einen Wasserstrom vorzustellen. Bleibt man bei
+diesem Modell, so kann man sich für einen Kondensator etwa folgendes Modell
+vorstellen: Bilden die Leitungen ein Röhrensystem, so kann man sich einen
+Kondensator als Hohlzylinder vorstellen, in dem sich ein genau passender, aber
+frei beweglicher Kolben befindet; dieser soll also einerseits den Hohlzylinder
+in zwei voneinander getrennte Halbkammern unterteilen, andererseits jedoch ohne
+nennenswerte Reibung beweglich sein. Im Ruhezustand soll der Kolben durch zwei
+an den Seitenwänden befestigten Schraubenfedern in einer mittigen Position
+gehalten werden.
+
+.. figure::
+    ../pics/bauteile/kondensator-wassermodell.png
+    :name: fig-kondensator-wassermodell
+    :alt:  fig-kondensator-wassermodell
+    :align: center
+    :width: 30%
+
+    Wasser-Modell eines Kondensators.
+
+    .. only:: html
+
+        :download:`SVG: Kondensator (Wassermodell)
+        <../pics/bauteile/kondensator-wassermodell.svg>`
+
+Wird in diesem Modell beispielsweise auf die linke Seite des Kolbens eine
+größerer Druck ausgeübt als auf die rechte, so verschiebt sich der Kolben nach
+rechts. Man erhält dabei scheinbar einen "Stromfluss" durch den Kondensator,
+denn links fließt ebenso viel (Wasser) in ihn hinein wie auf der rechten Seite
+herausfließt. Es handelt sich zwar nicht um die selben Wasser-Teilchen, da die
+beiden Halb-Kammern voneinander isoliert sind, aber rein quantitativ kann man
+trotz des Kolbens als Trennschicht einen Transport an Wasserteilchen "durch" den
+Kondensator beobachten.
+
+Wird der Kolben durch das zufließende Wasser aus seiner Ruhelag ausgelenkt, so
+baut sich in den Schraubenfedern zunehmend eine (mechanische) Gegen-Spannung
+auf. Der Kolben wird solange verschoben, bis die Gegenspannung in den Federn den
+an einer Seite anliegenden Überdruck ausgleicht. Liegt kein einseitiger
+Überdruck mehr an, kehrt der Kolben in den Ruhezustand zurück, wodurch es
+wiederum zum Ladungstransport "durch" den Kondensator kommt.
+
+
+.. _Ladekurven:
 .. _Kondensator im Gleichstromkreis:
 
 .. rubric:: Kondensatoren im Gleichstromkreis
 
-Um einen Kondensator komplett aufzuladen, sind je nach Kapazität des Kondensators
-und der Stromstärke des Ladestroms meist nur wenige Sekunden oder
-Sekundenbruchteile nötig.
+Um einen Kondensator komplett aufzuladen, sind je nach Kapazität des
+Kondensators und der Stärke des Ladestroms oft nur wenige Sekunden oder
+sogar Sekundenbruchteile nötig. Durch das Aufladen des Kondensators und die sich
+dabei aufbauende Spannung zwischen den Kondensatorplatten verläuft der
+Aufladevorgang anfangs schnell und dann zunehmend langsamer.
 
 .. figure::
     ../pics/schaltungen/kondensator-messschaltung.png
@@ -146,8 +200,30 @@ Sekundenbruchteile nötig.
         :download:`SVG: Kondensator-Messschaltung
         <../pics/schaltungen/kondensator-messschaltung.svg>`
 
-Der zeitliche Verlauf der Spannung :math:`U_{\mathrm{C}}` im Kondensator kann
-folgendermaßen beschrieben werden:
+Der Ladevorgang kommt dann zum Stillstand, wenn die Spannung
+:math:`U_{\mathrm{C}}` zwischen den beiden Kondensator-Platten gleich der
+Ladespannung :math:`U_0` ist; der Kondensator ist dann geladen, und es kann kein
+weiterer Strom mehr "durch" den Kondensator fließen. Als Diagramm erhält man für
+den Lade- beziehungsweise Entladevorgang eines Kondesators etwa folgende
+Kennlinie:
+
+.. figure::
+    ../pics/bauteile/diagramm-kondensator-ladespannung-ladestrom.png
+    :name: fig-kondensator-ladespannung-ladestrom
+    :alt:  fig-kondensator-ladespannung-ladestrom
+    :align: center
+    :width: 50%
+
+    Kennlinie eines Kondensators beim Auf- und Entladen.
+
+    .. only:: html
+
+        :download:`SVG: Kondensator-Kennlie (Laden und Entladen)
+        <../pics/bauteile/diagramm-kondensator-ladespannung-ladestrom.svg>`
+
+Aus mathematischer Sicht kann der zeitliche Verlauf der Spannung
+:math:`U_{\mathrm{C}}` zwischen den Kondensator-Platten folgendermaßen
+beschrieben werden:
 
 .. math::
     :label: eqn-kondensator-spannung-laden
@@ -161,13 +237,10 @@ Für den Ladestrom :math:`I_{\mathrm{C}}` gilt entsprechend:
 
     I_{\mathrm{C}} = \frac{U}{R} \cdot e^{-\frac{t}{\tau}}
 
-Hierbei ist :math:`\tau = R \cdot C` die sogenannte Zeitkonstante. Nach
-:math:`t = 1 \cdot \tau` hat die Kondensatorspannung :math:`1-\frac{1}{e}
-\approx 63\%` ihres Endwerts erreicht; der Ladestrom fällt nach der gleichen
-Zeit auf auf :math:`63\%` seines Anfangswertes ab. [#]_
-
-Nach dem Auflade-Vorgang ist die Spannung :math:`U_{\mathrm{C}}` zwischen den
-beiden Metallplatten gleich der Ladespannung :math:`U`.
+Hierbei ist :math:`\tau = R \cdot C` die sogenannte Zeitkonstante. Nach einer
+Zeit von :math:`t = 1 \cdot \tau` hat die Kondensator-Spannung
+:math:`1-\frac{1}{e} \approx 63\%` ihres Endwerts erreicht; der Ladestrom fällt
+nach der gleichen Zeit auf auf :math:`63\%` seines Anfangswertes ab. [#]_
 
 
 .. _Kondensator im Wechselstromkreis:
@@ -175,7 +248,7 @@ beiden Metallplatten gleich der Ladespannung :math:`U`.
 .. rubric:: Kondensatoren im Wechselstromkreis
 
 Legt man an einen Kondensator eine Wechselspannung an, so fließt wechselnd ein
-Lade- bzw. Entladestrom. Ein Kondensator wirkt in einem Wechselstromkreis wie
+Lade- beziehungsweise Entladestrom. Ein Kondensator wirkt in einem Wechselstromkreis wie
 ein Widerstand.
 
 Während der Auflade-Vorgänge wird elektrische Energie auf den Kondensator
@@ -193,8 +266,8 @@ desto, desto niedriger ist der kapazitative Scheinwiderstand des Kondensators:
 
 .. math::
 
-    R_{\mathrm{C}} = \frac{1}{2 \cdot \pi \cdot f \cdot C} = \frac{1}{\omega \cdot
-    C}
+    R_{\mathrm{C}} = \frac{1}{2 \cdot \pi \cdot f \cdot C} = \frac{1}{\omega
+    \cdot C}
 
 Hierbei wird mit :math:`\omega = 2 \cdot \pi \cdot f` die Kreisfrequenz des
 Wechselstroms bezeichnet.
@@ -202,8 +275,6 @@ Wechselstroms bezeichnet.
 ..  * Ladungsspeicher Q = C \cdot U -> C sollte groß sein, um bei einer
 ..  bestimmten Spannung viel Ladung aufnehmen zu können
 ..  * Filter: Z = 1/(j*omega*C) soll minimal werden -> C groß
-
-.. todo Notationsbeispiele: 23 = 23 pf ; 182 = 18 00 pf = 1,8 nF usw
 
 .. index:: Kondensator; Trimmkondensator
 .. _Trimmkondensator:
@@ -246,7 +317,7 @@ Elektrolyt-Kondensatoren
 
 Elektrolyt-Kondensatoren ("Elkos") haben meist hohe Kapazitätwerte von etwa
 :math:`\unit[0,1]{\mu F}` bis :math:`\unit[1000]{\mu F}`, oder sogar mehr.
-Elektrolyt-Kondensatoren sind allerdings polarisiert, d.h. sie besitzen jeweils
+Elektrolyt-Kondensatoren sind allerdings polarisiert, sie besitzen also jeweils
 einen Plus- und einen Minus-Anschluss, die man nicht vertauschen darf. Die
 Anschlüsse sind deutlich gekennzeichnet, meist durch aufgedruckte Minus-Zeichen
 am Minus-Anschluss. Bei neuen Elkos kann man den Pluspol zusätzlich am längeren
@@ -265,6 +336,12 @@ Anschlussdraht erkennen.
 
         :download:`SVG: Schaltzeichen Elektrolyt-Kondensator
         <../pics/bauteile/schaltzeichen-kondensator-elektrolytkondensator.svg>`
+
+Bei der Verwendung von Elektrolyt-Kondensatoren muss man nicht nur auf richtige
+Polung achten, sondern auch berücksichtigen, dass ihre Kapazität im Laufe der
+Zeit beachtlich abnehmen kann. Elektrolyt-Kondensatoren sollten folglich nur an
+Stellen verbaut werden, an denen eine Abweichung des Kapazitätswerts für die
+Schaltung keine allzu große Rolle spielt.
 
 .. Superkondensatoren ("Gold Caps")
 .. Kapazitäten von :math:`100` bis :math:`\unit[1500]{F}`
@@ -294,5 +371,15 @@ Anschlussdraht erkennen.
     .. math::
         :label: eqn-kondensator-stromstaerke-entladen
 
-        I_{\mathrm{C}} = \frac{U}{R} \cdot \left( 1 - e^{-\frac{t}{\tau}} \right)
+        I_{\mathrm{C}} = -\frac{U}{R} \cdot e^{-\frac{t}{\tau}}
+
+.. I_{\mathrm{C}} = \frac{U}{R} \cdot \left( 1 - e^{-\frac{t}{\tau}} \right)
+
+.. raw:: html
+
+    <hr />
+
+.. hint::
+
+    Zu diesem Abschnitt gibt es :ref:`Übungsaufgaben <Aufgaben Kondensator>`.
 

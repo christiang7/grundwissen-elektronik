@@ -50,12 +50,11 @@ wäre. Der Grund hierfür sind ständig auftretende Induktionsvorgänge.
 Der induktive Scheinwiderstand ist von der Induktivität der
 Spule und der Frequenz des Wechselstroms abhängig; je größer die
 Kapazität :math:`L` und je höher die Frequenz :math:`f` des Wechselstroms ist,
-desto, desto größer ist der induktive Scheinwiderstand des Kondensators:
+desto größer ist der induktive Scheinwiderstand des Kondensators:
 
 .. math::
 
-    R_{\mathrm{C}} = \frac{1}{2 \cdot \pi \cdot f \cdot C} = \frac{1}{\omega \cdot
-    C}
+    R_{\mathrm{L}} = 2 \cdot \pi \cdot f \cdot L = \omega \cdot l
 
 Hierbei wird mit :math:`\omega = 2 \cdot \pi \cdot f` die Kreisfrequenz des
 Wechselstroms bezeichnet.

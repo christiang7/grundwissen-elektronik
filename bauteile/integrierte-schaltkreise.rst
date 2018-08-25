@@ -76,10 +76,10 @@ Der Aufbau eines NE555 sieht als DIP-8-Baustein folgendermaßen aus:
 * Pin 1 ("Ground") wird mit der Masse (GND) verbunden
 * Pin 8 ("Vcc") wird mit der Eingangsspannung :math:`(\unit[4,5 \text{ bis }
   15]{V})` verbunden.
-* Pin 3 ("Output") ist der Ausgangs-Pin. Die abgegebene Spannung ist entweder
-  :math:`\unit[0]{V}`, wenn der Pin auf "aus" steht, oder nahe dem Wert der
-  Eingangsspannung, wenn der Pin auf "an" steht. Ob und wie lange der Pin auf
-  "an" bzw. "aus" steht, hängt von den Anschlüssen an den anderen fünf Pins
+* Pin 3 ("Output") ist der Ausgangs-Pin. Die dort anliegende Spannung ist
+  entweder :math:`\unit[0]{V}`, wenn der Pin auf "aus" steht, oder nahe dem Wert
+  der Eingangsspannung, wenn der Pin auf "an" steht. Ob und wie lange der Pin
+  auf "an" bzw. "aus" steht, hängt von den Anschlüssen an den anderen fünf Pins
   ab.
 * Pin 2 ("Trigger") kann den Ausgangs-Pin an- oder ausschalten. Liegt am
   Trigger-Pin eine geringere Spannung als ein Drittel der Eingangsspannung an,
@@ -104,16 +104,20 @@ Der Aufbau eines NE555 sieht als DIP-8-Baustein folgendermaßen aus:
   kurzgeschlossen, so unterbricht der Timer seine Arbeit, und beginnt erst von
   vorne, wenn am Reset-Pin (und am Pin 2) wieder eine Spannung anliegt.
 
+... to be continued ...
 
+.. Das Timer-IC kann an einer Spannung von 4.5 bis 16 Volt betrieben
+.. werden, ist sehr temperaturstabil (0.005%/Grad Celsius) und einsetzbar
+.. von Mikrosekunden bis Stunden.
 
 ..  Logik-Gatter
 ..  ------------
 
-..  Logische Gatter sind Schaltkreise, welche logische Operatoren wie UND, ODER,
-..  NICHT usw. auf elektronischem Weg realisieren. Sie verarbeiten Spannungen an den
-..  Leistungseingängen als Eingangssignale und liefern als Ausgangssignal -- je
-..  nachdem, ob die entsprechende logische Verknüpfung wahr oder falsch ergibt --
-..  eine bzw. keine Spannung am Leistungsausgang.
+.. Logische Gatter sind Schaltkreise, welche logische Operatoren wie UND, ODER,
+.. NICHT usw. auf elektronischem Weg realisieren. Sie verarbeiten Spannungen an den
+.. Eingangs-Pins und liefern als Ergebnis -- je nachdem, ob die
+.. entsprechende logische Verknüpfung wahr oder falsch ergibt -- die Nennspannung
+.. beziehungsweise keine Spannung am Ausgangs-Pin.
 
 
 

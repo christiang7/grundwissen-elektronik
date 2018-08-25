@@ -136,12 +136,12 @@ Anlegen eines passenden Magnetfelds auf den oberen Metallstreifen "umschaltet".
 Relais
 ------
 
-Ein Relais ist ein elektronischer Schalter, d.h. die Betätigung findet nicht
-mechanisch, sondern durch eine elektrische Spannung bzw. einen Stromfluss statt.
-Dabei wird bei einer ausreichenden elektrischen Spannung aus einer Spule mit
-Eisenkern ein Elektromagnet, der einen Reedkontakt als eigentlichen Schalter
-betätigt. Je nach Bauform lassen sich damit normale Schalter, Wechsel-Schalter
-sowie Schutz-Schalter konstruieren.
+Ein Relais ist ein elektronischer Schalter; die Betätigung findet also nicht
+mechanisch, sondern durch eine elektrische Spannung beziehungsweise einen
+Stromfluss statt. Dabei wird bei einer ausreichenden elektrischen Spannung aus
+einer Spule mit Eisenkern ein Elektromagnet, der einen Reedkontakt als
+eigentlichen Schalter betätigt. Je nach Bauform lassen sich damit normale
+Schalter, Wechsel-Schalter sowie Schutz-Schalter konstruieren.
 
 .. figure::
     ../pics/bauteile/schaltzeichen-relais.png
