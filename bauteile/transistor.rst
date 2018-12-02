@@ -346,7 +346,7 @@ simpel ist, lässt sich eine Verstärkungs-Mess-Funktion (oft auch als
 Den in Europa häufig als Standard verwendeten BC547-Transistor gibt
 beispielsweise in drei Verstärker-Klassen: :math:`\mathrm{A}`,
 :math:`\mathrm{B}` und :math:`\mathrm{C}`. Aus einem `Datenblatt
-<http://pdf.datasheetcatalog.net/datasheet/fairchild/BC547.pdf>`__ kann man für
+<http://www.datasheetcatalog.com/info_redirect/datasheet/fairchild/BC547.pdf.shtml>`__ kann man für
 den BC547-Transistor damit folgende Werte-Bereiche für den Verstärkungsfaktor
 :math:`B` entnehmen:
 
@@ -386,7 +386,7 @@ Kennlinien gibt.
     :width: 50%
 
     Kennlinienfeld eines ``BC547``-Transistors (Quelle: `Datasheetcatalog
-    <http://pdf.datasheetcatalog.net/datasheet/fairchild/BC547.pdf>`__):
+    <http://www.datasheetcatalog.com/info_redirect/datasheet/fairchild/BC547.pdf.shtml>`__):
     Kollektor-Emitter-Strom :math:`I_{\mathrm{CE}}` als Funktion von
     :math:`U_{\mathrm{CE}}`.
 
@@ -414,7 +414,7 @@ Diagramm ergibt, entspricht einer (logarithmisch skalierten) Dioden-Kennlinie.
     Kollektor-Emitter-Strom :math:`I_{\mathrm{CE}}` als Funktion der
     Basis-Spannung :math:`U_{\mathrm{BE}}` bei einem ``BC547``-Transistor
     (Quelle: `Datasheetcatalog
-    <http://pdf.datasheetcatalog.net/datasheet/fairchild/BC547.pdf>`__)
+    <http://www.datasheetcatalog.com/info_redirect/datasheet/fairchild/BC547.pdf.shtml>`__)
 
 Mittels einer solchen Kennlinie kann abgeschätzt werden, welcher
 :math:`\mathrm{CE}`-Strom bei einer bestimmten an der Basis anliegenden Spannung

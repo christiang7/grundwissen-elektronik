@@ -6,13 +6,14 @@ Textausgabe auf einem LCD-Panel
 -------------------------------
 
 
-https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library
+* https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library
 
-https://arduino-info.wikispaces.com/LCD-Blue-I2C?responseToken=1fced3964a7d93345b34129fa04019e2
+* http://arduinoinfo.mywikis.net/wiki/HOME?responseToken=1fced3964a7d93345b34129fa04019e2
 
-Library:
+.. Library:
 
-http://www.archiduino.com/liquidcrystal_i2c-h-library-arduino-ide-1-6-x/
+.. http://www.archiduino.com/liquidcrystal_i2c-h-library-arduino-ide-1-6-x/
 
+... to be continued ...
 
 

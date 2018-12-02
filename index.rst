@@ -20,8 +20,8 @@ Elektronik
 
     .. sidebar:: Hinweis
 
-        Dieses Projekt kann als Quellcode von `GitHub
-        <https://www.github.com/grund-wissen/grundwissen-elektronik>`_
+        Dieses Projekt kann als Quellcode von `GitLab
+        <https://www.gitlab.com/grund-wissen/grundwissen-elektronik>`_
         heruntergeladen werden.
 
         Offline-Version:

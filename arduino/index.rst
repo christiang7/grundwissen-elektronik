@@ -56,7 +56,7 @@ Links
 
 * `Arduino-Arbeitsheft für Schüler
   <http://gymnasium-ochsenhausen.de/homepage/wp-content/uploads/2016/02/Arduino-Skript_04122015.pdf>`__
-* `Arduino-Projekte (Kreative Kiste) <http://www.kreativekiste.de/elektro/arduino-projekte>`__
+* `Arduino-Projekte (Kreative Kiste) <https://www.kreativekiste.de/elektro/arduino-projekte>`__
 * `Arduino-Tutorial von Frerk Popovic <http://popovic.info/html/arduino/arduinoUno_1.html>`__
 
 

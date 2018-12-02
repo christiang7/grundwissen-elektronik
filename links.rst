@@ -14,11 +14,11 @@ Nachbau eigener Schaltungen:
 * `Elektronikbasteln <https://sites.google.com/site/bastelnelektroelektrik/home>`__
 * `Elektronik-Ecke <http://pitts-electronics-home.de/electron/elececke.htm>`__
 * `Ferromel Elektronik <http://www.ferromel.de/>`__
-* `Loetstelle <http://www.loetstelle.net/index.php>`__
-* `Elektroniktutor <http://elektroniktutor.de>`__
+* `Loetstelle <https://www.loetstelle.net/index.html>`__
+* `Elektroniktutor <https://elektroniktutor.de>`__
 * `Electronicsplanet <http://www.electronicsplanet.ch/indexes/ix_schal.html>`__
-* `JugendTechnikSchule <http://jugendtechnikschule.de/front_content.php?idcat=387>`__
-* `Kreative Kiste <http://www.kreativekiste.de/bastelideen/basteln-mit-9-volt>`__
+* `JugendTechnikSchule <https://www.jugendtechnikschule.de/front_content.php?idcat=387>`__
+* `Kreative Kiste <https://www.kreativekiste.de/bastelideen/basteln-mit-9-volt>`__
 * `Elexs Grundlagen und Experimente <http://www.elexs.de>`_
 
 ..
@@ -27,7 +27,7 @@ Nachbau eigener Schaltungen:
 .. rubric:: Elektronik-Bücher
 
 * `Grundlagen der Elektronik (Stefan Goßner)
-  <http://vg09.met.vgwort.de/na/6d3c048d2def400da0a254f7c185cdfc?l=http://www.prof-gossner.eu/pdf/Gesamtbuch7.pdf>`__
+  <http://www.prof-gossner.eu/pdf/Gesamtbuch7.pdf>`__
 
 
 .. _Datenblätter:
@@ -53,7 +53,7 @@ Erfahrungen habe ich bislang mit folgenden beiden Programmen gemacht:
   Schaltplan bzw. ein passendes Platinen-Layout zu erhalten. Für letzteres gibt
   es eine optimierende "Auto-Routing"-Funktion, die fertig entwickelbare
   Platinen-Layouts liefert (ähnlich wie das bekannte Freeware-Programm `Eagle
-  <https://cadsoft.io>`__) .
+  <https://www.autodesk.com/products/eagle/free-download>`__) .
 
 * `Qucs <https://de.wikipedia.org/wiki/Qucs>`__. ("Quite Universal Circuit
   Simulator) ist ein freies Programm zum Simulieren von Schaltkreisen; auf
@@ -65,7 +65,7 @@ Erfahrungen habe ich bislang mit folgenden beiden Programmen gemacht:
 
 .. index:: LT-Spice (Simulations-Software)
 
-* `LT-Spice <http://www.linear.com/designtools/software/#LTspice>`__: Dieses
+* `LT-Spice <https://www.analog.com/en/design-center/design-tools-and-calculators.html>`__: Dieses
   Programm ist zwar nicht Open Source, aber immerhin als Freeware frei nutzbar;
   unter Linux läuft es mittels :ref:`Wine <gwl:Emulieren von
   Windows-Programmen>` ohne Probleme. Als Simulations-Werkzeug ermöglicht
@@ -78,7 +78,7 @@ Erfahrungen habe ich bislang mit folgenden beiden Programmen gemacht:
   gibt es unter http://www.partsim.com/.
 
 * Für die Programmiersprache :ref:`Python3 <Python3>` gibt es ebenfalls ein
-  Simulations-Modul namens `PySpice <https://pypi.python.org/pypi/PySpice>`__;
+  Simulations-Modul namens `PySpice <https://pypi.org/project/PySpice/>`__;
   dieses ist allerdings noch im Aufbau (es gibt beispielsweise noch keine
   Bedienoberfläche).
 
@@ -133,11 +133,11 @@ Erfahrungen habe ich bislang mit folgenden beiden Programmen gemacht:
 Wer selbst elektronische Schaltungen ausprobieren möchte, findet bei
 folgenden Online-Shops eine reichliche Auswahl an Bauteilen:
 
-* `CSD <http://www.csd-electronics.de>`__
-* `Pollin <http://www.pollin.de/shop/index.html>`__
-* `Reichelt <http://www.reichelt.de/>`__
+* `CSD <http://csd-electronics.de/>`__
+* `Pollin <https://www.pollin.de/>`__
+* `Reichelt <https://www.reichelt.de/>`__
 * `Conrad <https://www.conrad.de>`__
-* `ELV <http://www.elv.de>`__
+* `ELV <https://www.elv.de>`__
 
 
 .. rubric:: Arduino-Zubehör
@@ -145,10 +145,10 @@ folgenden Online-Shops eine reichliche Auswahl an Bauteilen:
 Folgende Shops haben sich auf Open Hardware, Arduinos und allgemein
 Maker-Artikel spezialisiert:
 
-* `Madtronics <http://www.madtronics.de>`__
+* `Madtronics <https://www.madtronics.eu/>`__
 * `Komputer Open Source Hardware <http://www.komputer.de/zen/>`__
-* `Exp-Tech Maker Shop <http://www.exp-tech.de/>`__
-* `Elmicro Shop <http://elmicro.com/>`__
+* `Exp-Tech Maker Shop <https://www.exp-tech.de/>`__
+* `Elmicro Shop <https://elmicro.com/>`__
 
 .. * `Pimoroni Maker Shop (GB, Paypal only!) <https://shop.pimoroni.de/>`_
 .. * `Segor <http://www.segor.de/>`_
@@ -156,7 +156,7 @@ Maker-Artikel spezialisiert:
 
 Messleitungen, Stecker und Buchsen:
 
-* `Elektronische Bauteile und Lichtsysteme (Firma Schnepp) <http://www.schnepp-neudenau.de>`_
+* `Elektronische Bauteile und Lichtsysteme (Firma Schnepp) <https://www.schnepp-neudenau.de/>`_
 
 .. jeffrey.ratcliff@gmail.com
 
